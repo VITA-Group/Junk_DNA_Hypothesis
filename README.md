@@ -1,3 +1,5 @@
 # Junk_DNA_Hypothesis
 
-Coming soone.
+The official implementation of Junk DNA Hypothesis. 
+
+Coming soon.
