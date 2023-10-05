@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of  **Junk DNA Hypothesis**: A Task-Centric Angle of LLM Pre-trained Weights through Sparsity 
 
-[Lu Yin](https://luuyin.com//), [Shiwei Liu](https://shiweiliuiiiiiii.github.io/), [Tianjin Huang](https://research.tue.nl/en/persons/tianjin-huang), [Ajay Jaiswal](https://ajay1994.github.io/), [Zhangyang Wang](https://vita-group.github.io/)
+[Lu Yin](https://luuyin.com//), [Shiwei Liu](https://shiweiliuiiiiiii.github.io/), [Ajay Jaiswal](https://ajay1994.github.io/), [Souvik Kundu](https://ksouvik52.github.io/), [Zhangyang Wang](https://vita-group.github.io/)
 
 University of Texas at Austin, Eindhoven University of Technology
 
