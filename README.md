@@ -10,7 +10,6 @@ The code can be contacted at l.yin@tue.nl.
 
 Table of contents
 * [Installation](#installation)
-* [Tasks, Datasets, and Models](#tasks-models-and-datasets)
 * [Various Task Diffuclty](#various-task-diffculty)
 * [Are Pre-trained Magnitude Values Indeed the True Gem?](#are-pre-trained-magnitude-values-indeed-the-true-gem?)
 
@@ -21,7 +20,7 @@ Please check [INSTALL.md](INSTALL.md) for installation instructinos.
 
 
 
-## Various Task diffculty
+## Various Task difficulty
 
 
 We provide a quick overview of the arguments:  
@@ -171,5 +170,5 @@ done
 
 
 <p align="center">
-<img src="./Images_png/TRUE_GEM.png" width="400" height="220">
+<img src="./Images_png/TRUE_GEM.png" width="700" height="300">
 </p>
