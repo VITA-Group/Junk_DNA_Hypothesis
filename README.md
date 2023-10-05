@@ -89,6 +89,7 @@ done
 ### Task Difficulty Setting 3: With v.s. Without Available External Information
 --- 
 
+### Results
 <p align="center">
 <img src="./Images_png/Task_3.png" width="700" height="200">
 </p>
@@ -178,3 +179,12 @@ done
 <p align="center">
 <img src="./Images_png/TRUE_GEM.png" width="700" height="380">
 </p>
+
+
+
+## Citation
+if you find this repo is helpful, please cite
+
+```
+
+```
