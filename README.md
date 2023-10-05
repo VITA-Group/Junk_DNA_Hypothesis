@@ -20,7 +20,7 @@ Please check [INSTALL.md](INSTALL.md) for installation instructinos.
 
 
 
-## Various Task difficulty
+## Various Task diffculty
 
 
 We provide a quick overview of the arguments:  
@@ -33,10 +33,10 @@ We provide a quick overview of the arguments:
 
 
 ### Task Difficulty Setting 1: Varying the Adequacy of Target Domain Data
-
+--- 
+### Scripts example
 
 ```
-
 cd ./GLUE_tasks
 for seed in 41 
 do
@@ -66,31 +66,38 @@ do
 done
 ```
 
+### Results
+
+
 <p align="center">
-<img src="./Images_png/Task_1.png" width="400" height="250">
+<img src="./Images_png/Task_1.png" width="700" height="400">
 </p>
 
 
 
 ### Task Difficulty Setting 2: Majority v.s. Minority in Multi-Domain Learning
 --- 
+
+### Results
+
 <p align="center">
-<img src="./Images_png/Task_2.png" width="400" height="120">
+<img src="./Images_png/Task_2.png" width="700" height="180">
 </p>
+
+
 
 ### Task Difficulty Setting 3: With v.s. Without Available External Information
 --- 
 
-
-
-
 <p align="center">
-<img src="./Images_png/Task_3.png" width="400" height="120">
+<img src="./Images_png/Task_3.png" width="700" height="200">
 </p>
+
+
 ### Task Difficulty Setting 4: Estimating LLM-facing Task Difficulty by Normalized Human-LLM Performance Gap
 --- 
 
-example
+### Scripts example
 
 ```
 
@@ -123,16 +130,15 @@ done
 
 
 ```
-
+### Results
 
 <p align="center">
-<img src="./Images_png/Task_4.png" width="400" height="200">
+<img src="./Images_png/Task_4.png" width="700" height="350">
 </p>
 
 ## Are Pre-trained Magnitude Values Indeed the True Gem?
 
-
-example
+### Scripts example
 
 ```
 
@@ -149,7 +155,7 @@ do
       python Glue_prune_oneshot.py \
         --method Glue_noembed_freeze_weights \
         --validation_split_percentage $validation_split_percentage \
-        -- freeze_weights freeze_weights_frompretrain\
+        -- freeze_weights\
         --noembed \
         --sparsity $sparsity \
         --model_name_or_path roberta-large \
@@ -168,7 +174,7 @@ done
 
 ```
 
-
+### Results
 <p align="center">
-<img src="./Images_png/TRUE_GEM.png" width="700" height="300">
+<img src="./Images_png/TRUE_GEM.png" width="700" height="380">
 </p>
