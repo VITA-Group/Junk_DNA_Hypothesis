@@ -141,8 +141,13 @@ done
 
 ### Scripts example
 
-```
+--
+vary  `sparse_method` with 
+- `--freeze_weights`: Sparse Transfer
+- `--freeze_weights_frompretrain`: Dense Transfer with Freezing
+- -or leave it emply:  Sparse to Dense Transfer
 
+```
 cd ./GLUE_tasks 
 
 for seed in 41 42 43
@@ -156,7 +161,7 @@ do
       python Glue_prune_oneshot.py \
         --method Glue_noembed_freeze_weights \
         --validation_split_percentage $validation_split_percentage \
-        -- freeze_weights\
+        --sparse_method \
         --noembed \
         --sparsity $sparsity \
         --model_name_or_path roberta-large \
