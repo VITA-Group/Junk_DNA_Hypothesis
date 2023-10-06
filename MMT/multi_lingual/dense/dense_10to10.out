@@ -1,0 +1,1167 @@
+/var/spool/slurm/slurmd/job3850101/slurm_script: line 11: /home/xiaoq/miniconda3/etc/profile.d/conda.sh: No such file or directory
+2023-09-12 18:27:15 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2023-09-12 18:27:17 | INFO | fairseq_cli.train | {'_name': None, 'common': {'_name': None, 'no_progress_bar': False, 'log_interval': 100, 'log_format': 'simple', 'log_file': None, 'aim_repo': None, 'aim_run_hash': None, 'tensorboard_logdir': None, 'wandb_project': None, 'azureml_logging': False, 'seed': 222, 'cpu': False, 'tpu': False, 'bf16': False, 'memory_efficient_bf16': False, 'fp16': False, 'memory_efficient_fp16': False, 'fp16_no_flatten_grads': False, 'fp16_init_scale': 128, 'fp16_scale_window': None, 'fp16_scale_tolerance': 0.0, 'on_cpu_convert_precision': False, 'min_loss_scale': 0.0001, 'threshold_loss_scale': None, 'amp': False, 'amp_batch_retries': 2, 'amp_init_scale': 128, 'amp_scale_window': None, 'user_dir': None, 'empty_cache_freq': 0, 'all_gather_list_size': 16384, 'model_parallel_size': 1, 'quantization_config_path': None, 'profile': False, 'reset_logging': False, 'suppress_crashes': False, 'use_plasma_view': False, 'plasma_path': '/tmp/plasma'}, 'common_eval': {'_name': None, 'path': None, 'post_process': None, 'quiet': False, 'model_overrides': '{}', 'results_path': None}, 'distributed_training': {'_name': None, 'distributed_world_size': 1, 'distributed_num_procs': 1, 'distributed_rank': 0, 'distributed_backend': 'nccl', 'distributed_init_method': None, 'distributed_port': -1, 'device_id': 0, 'distributed_no_spawn': False, 'ddp_backend': 'pytorch_ddp', 'ddp_comm_hook': 'none', 'bucket_cap_mb': 25, 'fix_batches_to_gpus': False, 'find_unused_parameters': False, 'gradient_as_bucket_view': False, 'fast_stat_sync': False, 'heartbeat_timeout': -1, 'broadcast_buffers': False, 'slowmo_momentum': None, 'slowmo_base_algorithm': 'localsgd', 'localsgd_frequency': 3, 'nprocs_per_node': 1, 'pipeline_model_parallel': False, 'pipeline_balance': None, 'pipeline_devices': None, 'pipeline_chunks': 0, 'pipeline_encoder_balance': None, 'pipeline_encoder_devices': None, 'pipeline_decoder_balance': None, 'pipeline_decoder_devices': None, 'pipeline_checkpoint': 'never', 'zero_sharding': 'none', 'fp16': False, 'memory_efficient_fp16': False, 'tpu': False, 'no_reshard_after_forward': False, 'fp32_reduce_scatter': False, 'cpu_offload': False, 'use_sharded_state': False, 'not_fsdp_flatten_parameters': False}, 'dataset': {'_name': None, 'num_workers': 1, 'skip_invalid_size_inputs_valid_test': False, 'max_tokens': 1024, 'batch_size': None, 'required_batch_size_multiple': 8, 'required_seq_len_multiple': 1, 'dataset_impl': None, 'data_buffer_size': 10, 'train_subset': 'train', 'valid_subset': 'valid', 'combine_valid_subsets': None, 'ignore_unused_valid_subsets': False, 'validate_interval': 1, 'validate_interval_updates': 0, 'validate_after_updates': 0, 'fixed_validation_seed': None, 'disable_validation': False, 'max_tokens_valid': 1024, 'batch_size_valid': None, 'max_valid_steps': None, 'curriculum': 0, 'gen_subset': 'test', 'num_shards': 1, 'shard_id': 0, 'grouped_shuffling': False, 'update_epoch_batch_itr': False, 'update_ordered_indices_seed': False}, 'optimization': {'_name': None, 'max_epoch': 0, 'max_update': 40000, 'stop_time_hours': 0.0, 'clip_norm': 0.0, 'sentence_avg': False, 'update_freq': [2], 'lr': [3e-05], 'stop_min_lr': -1.0, 'use_bmuf': False, 'skip_remainder_batch': False}, 'checkpoint': {'_name': None, 'save_dir': 'dense_10to10/0.001/', 'restore_file': 'examples/multilingual/mbart.cc25.v2/model.pt', 'continue_once': None, 'finetune_from_model': None, 'reset_dataloader': True, 'reset_lr_scheduler': False, 'reset_meters': True, 'reset_optimizer': True, 'optimizer_overrides': '{}', 'save_interval': 1, 'save_interval_updates': 50000, 'keep_interval_updates': 10, 'keep_interval_updates_pattern': -1, 'keep_last_epochs': -1, 'keep_best_checkpoints': -1, 'no_save': False, 'no_epoch_checkpoints': True, 'no_last_checkpoints': False, 'no_save_optimizer_state': False, 'best_checkpoint_metric': 'loss', 'maximize_best_checkpoint_metric': False, 'patience': -1, 'checkpoint_suffix': '', 'checkpoint_shard_count': 1, 'load_checkpoint_on_all_dp_ranks': False, 'write_checkpoints_asynchronously': False, 'model_parallel_size': 1}, 'bmuf': {'_name': None, 'block_lr': 1.0, 'block_momentum': 0.875, 'global_sync_iter': 50, 'warmup_iterations': 500, 'use_nbm': False, 'average_sync': False, 'distributed_world_size': 1}, 'generation': {'_name': None, 'beam': 5, 'nbest': 1, 'max_len_a': 0.0, 'max_len_b': 200, 'min_len': 1, 'match_source_len': False, 'unnormalized': False, 'no_early_stop': False, 'no_beamable_mm': False, 'lenpen': 1.0, 'unkpen': 0.0, 'replace_unk': None, 'sacrebleu': False, 'score_reference': False, 'prefix_size': 0, 'no_repeat_ngram_size': 0, 'sampling': False, 'sampling_topk': -1, 'sampling_topp': -1.0, 'constraints': None, 'temperature': 1.0, 'diverse_beam_groups': -1, 'diverse_beam_strength': 0.5, 'diversity_rate': -1.0, 'print_alignment': None, 'print_step': False, 'lm_path': None, 'lm_weight': 0.0, 'iter_decode_eos_penalty': 0.0, 'iter_decode_max_iter': 10, 'iter_decode_force_max_iter': False, 'iter_decode_with_beam': 1, 'iter_decode_with_external_reranker': False, 'retain_iter_history': False, 'retain_dropout': False, 'retain_dropout_modules': None, 'decoding_format': None, 'no_seed_provided': False, 'eos_token': None}, 'eval_lm': {'_name': None, 'output_word_probs': False, 'output_word_stats': False, 'context_window': 0, 'softmax_batch': 9223372036854775807}, 'interactive': {'_name': None, 'buffer_size': 0, 'input': '-'}, 'model': Namespace(_name='mbart_large', activation_fn='gelu', adam_betas='(0.9, 0.98)', adam_eps=1e-06, adaptive_softmax_cutoff=None, adaptive_softmax_dropout=0, aim_repo=None, aim_run_hash=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, arch='mbart_large', attention_dropout=0.1, azureml_logging=False, batch_size=None, batch_size_valid=None, best_checkpoint_metric='loss', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', clip_norm=0.0, combine_valid_subsets=None, continue_once=None, cpu=False, cpu_offload=False, criterion='label_smoothed_cross_entropy', curriculum=0, data='examples/multilingual/multidata', data_buffer_size=10, dataset_impl=None, ddp_backend='pytorch_ddp', ddp_comm_hook='none', decoder_attention_heads=16, decoder_embed_dim=1024, decoder_embed_path=None, decoder_ffn_embed_dim=4096, decoder_input_dim=1024, decoder_langtok=True, decoder_layers=12, decoder_learned_pos=True, decoder_normalize_before=True, decoder_output_dim=1024, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.3, ema_decay=0.9999, ema_fp32=False, ema_seed_model=None, ema_start_update=0, ema_update_freq=1, empty_cache_freq=0, enable_lang_ids=False, enable_reservsed_directions_shared_datasets=False, encoder_attention_heads=16, encoder_embed_dim=1024, encoder_embed_path=None, encoder_ffn_embed_dim=4096, encoder_langtok='src', encoder_layers=12, encoder_learned_pos=True, encoder_normalize_before=True, eos=2, extra_data=None, extra_lang_pairs=None, fast_stat_sync=False, final_prune_time=0.8, find_unused_parameters=False, finetune_from_model=None, fix=True, fix_batches_to_gpus=False, fixed_dictionary=None, fixed_validation_seed=None, fp16=False, fp16_adam_stats=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, fp32_reduce_scatter=False, gen_subset='test', gradient_as_bucket_view=False, grouped_shuffling=False, growth=None, heartbeat_timeout=-1, ignore_prefix_size=0, ignore_unused_valid_subsets=False, imp_iters=1, initial_prune_time=0.1, initialization_checkpoint=None, keep_best_checkpoints=-1, keep_inference_langtok=False, keep_interval_updates=10, keep_interval_updates_pattern=-1, keep_last_epochs=-1, label_smoothing=0.2, lang_dict='examples/multilingual/lang_list.txt', lang_pairs='en-fr,en-cs,en-de,en-gu,en-ja,en-my,en-ro,en-ru,en-vi,en-zh,zh-en,vi-en,ru-en,ro-en,my-en,ja-en,gu-en,de-en,cs-en,fr-en', lang_tok_replacing_bos_eos=False, lang_tok_style='multilingual', langs=None, langtoks=None, langtoks_specs=['main'], layernorm_embedding=True, left_pad_source='True', left_pad_target='False', load_alignments=False, load_checkpoint_on_all_dp_ranks=False, localsgd_frequency=3, log_file=None, log_format='simple', log_interval=100, lr=[3e-05], lr_scheduler='inverse_sqrt', max_epoch=0, max_source_positions=1024, max_target_positions=1024, max_tokens=1024, max_tokens_valid=1024, max_update=40000, max_valid_steps=None, maximize_best_checkpoint_metric=False, memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_reshard_after_forward=False, no_save=False, no_save_optimizer_state=False, no_scale_embedding=False, no_seed_provided=False, noembed=False, not_fsdp_flatten_parameters=False, nprocs_per_node=1, num_shards=1, num_workers=1, on_cpu_convert_precision=False, optimizer='adam', optimizer_overrides='{}', pad=1, patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, plasma_path='/tmp/plasma', pooler_activation_fn='tanh', pooler_dropout=0.0, profile=False, prune=None, prune_rate=0.5, quantization_config_path=None, redistribution=None, relu_dropout=0.0, report_accuracy=False, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_logging=False, reset_lr_scheduler=False, reset_meters=True, reset_optimizer=True, restore_file='examples/multilingual/mbart.cc25.v2/model.pt', sampling_method='temperature', sampling_temperature=1.5, sampling_weights=None, sampling_weights_from_file=None, save_dir='dense_10to10/0.001/', save_interval=1, save_interval_updates=50000, scoring='bleu', seed=222, sentence_avg=False, shard_id=0, share_all_embeddings=True, share_decoder_input_output_embed=True, simul_type=None, skip_invalid_size_inputs_valid_test=False, skip_remainder_batch=False, slowmo_base_algorithm='localsgd', slowmo_momentum=None, source_dict=None, source_lang=None, sparse=False, sparse_init='one_shot_gm_cpu', sparse_mode='fix', sparsity=0.001, stop_min_lr=-1.0, stop_time_hours=0, store_ema=False, suppress_crashes=False, target_dict=None, target_lang=None, task='translation_multi_simple_epoch', tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, tpu=False, train_subset='train', truncate_source=False, unk=3, update_epoch_batch_itr=False, update_freq=[2], update_frequency=1500, update_ordered_indices_seed=False, upsample_primary=1, use_bmuf=False, use_old_adam=False, use_plasma_view=False, use_sharded_state=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, virtual_data_size=None, virtual_epoch_size=None, wandb_project=None, warmup_init_lr=-1, warmup_updates=2500, weight_decay=0.0, write_checkpoints_asynchronously=False, zero_sharding='none'), 'task': Namespace(_name='translation_multi_simple_epoch', activation_fn='gelu', adam_betas='(0.9, 0.98)', adam_eps=1e-06, adaptive_softmax_cutoff=None, adaptive_softmax_dropout=0, aim_repo=None, aim_run_hash=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, arch='mbart_large', attention_dropout=0.1, azureml_logging=False, batch_size=None, batch_size_valid=None, best_checkpoint_metric='loss', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', clip_norm=0.0, combine_valid_subsets=None, continue_once=None, cpu=False, cpu_offload=False, criterion='label_smoothed_cross_entropy', curriculum=0, data='examples/multilingual/multidata', data_buffer_size=10, dataset_impl=None, ddp_backend='pytorch_ddp', ddp_comm_hook='none', decoder_attention_heads=16, decoder_embed_dim=1024, decoder_embed_path=None, decoder_ffn_embed_dim=4096, decoder_input_dim=1024, decoder_langtok=True, decoder_layers=12, decoder_learned_pos=True, decoder_normalize_before=True, decoder_output_dim=1024, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.3, ema_decay=0.9999, ema_fp32=False, ema_seed_model=None, ema_start_update=0, ema_update_freq=1, empty_cache_freq=0, enable_lang_ids=False, enable_reservsed_directions_shared_datasets=False, encoder_attention_heads=16, encoder_embed_dim=1024, encoder_embed_path=None, encoder_ffn_embed_dim=4096, encoder_langtok='src', encoder_layers=12, encoder_learned_pos=True, encoder_normalize_before=True, eos=2, extra_data=None, extra_lang_pairs=None, fast_stat_sync=False, final_prune_time=0.8, find_unused_parameters=False, finetune_from_model=None, fix=True, fix_batches_to_gpus=False, fixed_dictionary=None, fixed_validation_seed=None, fp16=False, fp16_adam_stats=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, fp32_reduce_scatter=False, gen_subset='test', gradient_as_bucket_view=False, grouped_shuffling=False, growth=None, heartbeat_timeout=-1, ignore_prefix_size=0, ignore_unused_valid_subsets=False, imp_iters=1, initial_prune_time=0.1, initialization_checkpoint=None, keep_best_checkpoints=-1, keep_inference_langtok=False, keep_interval_updates=10, keep_interval_updates_pattern=-1, keep_last_epochs=-1, label_smoothing=0.2, lang_dict='examples/multilingual/lang_list.txt', lang_pairs='en-fr,en-cs,en-de,en-gu,en-ja,en-my,en-ro,en-ru,en-vi,en-zh,zh-en,vi-en,ru-en,ro-en,my-en,ja-en,gu-en,de-en,cs-en,fr-en', lang_tok_replacing_bos_eos=False, lang_tok_style='multilingual', langs=None, langtoks=None, langtoks_specs=['main'], layernorm_embedding=True, left_pad_source='True', left_pad_target='False', load_alignments=False, load_checkpoint_on_all_dp_ranks=False, localsgd_frequency=3, log_file=None, log_format='simple', log_interval=100, lr=[3e-05], lr_scheduler='inverse_sqrt', max_epoch=0, max_source_positions=1024, max_target_positions=1024, max_tokens=1024, max_tokens_valid=1024, max_update=40000, max_valid_steps=None, maximize_best_checkpoint_metric=False, memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_reshard_after_forward=False, no_save=False, no_save_optimizer_state=False, no_scale_embedding=False, no_seed_provided=False, noembed=False, not_fsdp_flatten_parameters=False, nprocs_per_node=1, num_shards=1, num_workers=1, on_cpu_convert_precision=False, optimizer='adam', optimizer_overrides='{}', pad=1, patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, plasma_path='/tmp/plasma', pooler_activation_fn='tanh', pooler_dropout=0.0, profile=False, prune=None, prune_rate=0.5, quantization_config_path=None, redistribution=None, relu_dropout=0.0, report_accuracy=False, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_logging=False, reset_lr_scheduler=False, reset_meters=True, reset_optimizer=True, restore_file='examples/multilingual/mbart.cc25.v2/model.pt', sampling_method='temperature', sampling_temperature=1.5, sampling_weights=None, sampling_weights_from_file=None, save_dir='dense_10to10/0.001/', save_interval=1, save_interval_updates=50000, scoring='bleu', seed=222, sentence_avg=False, shard_id=0, share_all_embeddings=True, share_decoder_input_output_embed=True, simul_type=None, skip_invalid_size_inputs_valid_test=False, skip_remainder_batch=False, slowmo_base_algorithm='localsgd', slowmo_momentum=None, source_dict=None, source_lang=None, sparse=False, sparse_init='one_shot_gm_cpu', sparse_mode='fix', sparsity=0.001, stop_min_lr=-1.0, stop_time_hours=0, store_ema=False, suppress_crashes=False, target_dict=None, target_lang=None, task='translation_multi_simple_epoch', tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, tpu=False, train_subset='train', truncate_source=False, unk=3, update_epoch_batch_itr=False, update_freq=[2], update_frequency=1500, update_ordered_indices_seed=False, upsample_primary=1, use_bmuf=False, use_old_adam=False, use_plasma_view=False, use_sharded_state=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, virtual_data_size=None, virtual_epoch_size=None, wandb_project=None, warmup_init_lr=-1, warmup_updates=2500, weight_decay=0.0, write_checkpoints_asynchronously=False, zero_sharding='none'), 'criterion': {'_name': 'label_smoothed_cross_entropy', 'label_smoothing': 0.2, 'report_accuracy': False, 'ignore_prefix_size': 0, 'sentence_avg': False}, 'optimizer': {'_name': 'adam', 'adam_betas': '(0.9, 0.98)', 'adam_eps': 1e-06, 'weight_decay': 0.0, 'use_old_adam': False, 'fp16_adam_stats': False, 'tpu': False, 'lr': [3e-05]}, 'lr_scheduler': {'_name': 'inverse_sqrt', 'warmup_updates': 2500, 'warmup_init_lr': -1.0, 'lr': [3e-05]}, 'scoring': {'_name': 'bleu', 'pad': 1, 'eos': 2, 'unk': 3}, 'bpe': None, 'tokenizer': None, 'ema': {'_name': None, 'store_ema': False, 'ema_decay': 0.9999, 'ema_start_update': 0, 'ema_seed_model': None, 'ema_update_freq': 1, 'ema_fp32': False}, 'spa': {'_name': None, 'imp_iters': 1, 'update_frequency': 1500, 'sparse': False, 'noembed': False, 'fix': True, 'growth': None, 'prune': None, 'initialization_checkpoint': None, 'sparse_init': 'one_shot_gm_cpu', 'redistribution': None, 'sparsity': 0.001, 'prune_rate': 0.5, 'sparse_mode': 'fix', 'final_prune_time': 0.8, 'initial_prune_time': 0.1}, 'simul_type': None}
+2023-09-12 18:27:17 | INFO | fairseq.data.multilingual.multilingual_data_manager | loaded language list from examples/multilingual/lang_list.txt as they are ordered in file
+2023-09-12 18:27:23 | INFO | fairseq.data.multilingual.multilingual_data_manager | [zh] dictionary: 250026 types
+2023-09-12 18:27:27 | INFO | fairseq.data.multilingual.multilingual_data_manager | [zh] dictionary: 250026 types
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | BARTModel(
+  (encoder): TransformerEncoderBase(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(250026, 1024, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+    (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (layers): ModuleList(
+      (0): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (6): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (7): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (8): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (9): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (10): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (11): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoderBase(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(250026, 1024, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+    (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (layers): ModuleList(
+      (0): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (6): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (7): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (8): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (9): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (10): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (11): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (output_projection): Linear(in_features=1024, out_features=250026, bias=False)
+  )
+  (classification_heads): ModuleDict()
+)
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | task: TranslationMultiSimpleEpochTask
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | model: BARTModel
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | criterion: LabelSmoothedCrossEntropyCriterion
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | num. shared model params: 761,956,352 (num. trained: 761,956,352)
+2023-09-12 18:27:45 | INFO | fairseq_cli.train | num. expert model params: 0 (num. trained: 0)
+2023-09-12 18:27:45 | INFO | fairseq.tasks.translation_multi_simple_epoch | loading data for valid epoch=1/None
+2023-09-12 18:27:45 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=41948.43359375Mb; avail=466613.48828125Mb
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | langtoks settings: {'main': ('src', 'tgt')}
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | [valid] num of shards: {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1}
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-fr
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-cs
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-de
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-gu
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ja
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-my
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ro
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ru
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-vi
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-zh
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:zh-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:vi-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ru-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ro-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:my-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ja-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:gu-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:de-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:cs-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:fr-en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-fr src_langtok: 250002; tgt_langtok: 250008
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-fr.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-fr.fr
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-fr 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-cs src_langtok: 250002; tgt_langtok: 250018
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.cs-en.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.cs-en.cs
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-cs 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-de src_langtok: 250002; tgt_langtok: 250006
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.de-en.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.de-en.de
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-de 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-gu src_langtok: 250002; tgt_langtok: 250025
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-gu.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-gu.gu
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-gu 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ja src_langtok: 250002; tgt_langtok: 250005
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ja.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ja.ja
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-ja 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-my src_langtok: 250002; tgt_langtok: 250001
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-my.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-my.my
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-my 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ro src_langtok: 250002; tgt_langtok: 250007
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ro.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ro.ro
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-ro 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ru src_langtok: 250002; tgt_langtok: 250003
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ru.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ru.ru
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-ru 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-vi src_langtok: 250002; tgt_langtok: 250004
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-vi.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-vi.vi
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-vi 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-zh src_langtok: 250002; tgt_langtok: 250012
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-zh.en
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-zh.zh
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid en-zh 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:zh-en src_langtok: 250012; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-zh.zh
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-zh.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid zh-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:vi-en src_langtok: 250004; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-vi.vi
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-vi.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid vi-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ru-en src_langtok: 250003; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ru.ru
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ru.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid ru-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ro-en src_langtok: 250007; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ro.ro
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ro.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid ro-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:my-en src_langtok: 250001; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-my.my
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-my.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid my-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ja-en src_langtok: 250005; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ja.ja
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-ja.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid ja-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:gu-en src_langtok: 250025; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-gu.gu
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-gu.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid gu-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:de-en src_langtok: 250006; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.de-en.de
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.de-en.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid de-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:cs-en src_langtok: 250018; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.cs-en.cs
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.cs-en.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid cs-en 2000 examples
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:fr-en src_langtok: 250008; tgt_langtok: 250002
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-fr.fr
+2023-09-12 18:27:45 | INFO | fairseq.data.data_utils | loaded 2,000 examples from: examples/multilingual/multidata/valid.en-fr.en
+2023-09-12 18:27:45 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata valid fr-en 2000 examples
+2023-09-12 18:27:50 | INFO | fairseq.trainer | detected shared parameter: encoder.embed_tokens.weight <- decoder.embed_tokens.weight
+2023-09-12 18:27:50 | INFO | fairseq.trainer | detected shared parameter: encoder.embed_tokens.weight <- decoder.output_projection.weight
+2023-09-12 18:27:50 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2023-09-12 18:27:50 | INFO | fairseq.utils | rank   0: capabilities =  8.0  ; total memory = 39.438 GB ; name = NVIDIA A100-SXM4-40GB                   
+2023-09-12 18:27:50 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2023-09-12 18:27:50 | INFO | fairseq_cli.train | training on 1 devices (GPUs/TPUs)
+2023-09-12 18:27:50 | INFO | fairseq_cli.train | max tokens per device = 1024 and max sentences per device = None
+2023-09-12 18:27:50 | INFO | fairseq.trainer | Preparing to load checkpoint examples/multilingual/mbart.cc25.v2/model.pt
+2023-09-12 18:27:56 | INFO | fairseq.trainer | NOTE: your device may support faster training with --fp16 or --amp
+2023-09-12 18:27:56 | INFO | fairseq.trainer | Loaded checkpoint examples/multilingual/mbart.cc25.v2/model.pt (epoch 142 @ 0 updates)
+******************************************
+resetting dataloader
+******************************************
+2023-09-12 18:27:56 | INFO | fairseq.trainer | loading train data for epoch 1
+2023-09-12 18:27:56 | INFO | fairseq.tasks.translation_multi_simple_epoch | loading data for train epoch=1/None
+2023-09-12 18:27:56 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=41870.9765625Mb; avail=466566.84765625Mb
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | langtoks settings: {'main': ('src', 'tgt')}
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | [train] num of shards: {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1}
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-fr
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-cs
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-de
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-gu
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ja
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-my
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ro
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-ru
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-vi
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:en-zh
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:zh-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:vi-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ru-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ro-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:my-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:ja-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:gu-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:de-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:cs-en
+split_num_shards_dict {'main:en-fr': 1, 'main:en-cs': 1, 'main:en-de': 1, 'main:en-gu': 1, 'main:en-ja': 1, 'main:en-my': 1, 'main:en-ro': 1, 'main:en-ru': 1, 'main:en-vi': 1, 'main:en-zh': 1, 'main:zh-en': 1, 'main:vi-en': 1, 'main:ru-en': 1, 'main:ro-en': 1, 'main:my-en': 1, 'main:ja-en': 1, 'main:gu-en': 1, 'main:de-en': 1, 'main:cs-en': 1, 'main:fr-en': 1} main:fr-en
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-fr src_langtok: 250002; tgt_langtok: 250008
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-fr.en
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-fr.fr
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-fr 1000000 examples
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-cs src_langtok: 250002; tgt_langtok: 250018
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.cs-en.en
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.cs-en.cs
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-cs 1000000 examples
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-de src_langtok: 250002; tgt_langtok: 250006
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.de-en.en
+2023-09-12 18:27:56 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.de-en.de
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-de 1000000 examples
+2023-09-12 18:27:56 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-gu src_langtok: 250002; tgt_langtok: 250025
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 318,306 examples from: examples/multilingual/multidata/train.en-gu.en
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 318,306 examples from: examples/multilingual/multidata/train.en-gu.gu
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-gu 318306 examples
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ja src_langtok: 250002; tgt_langtok: 250005
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ja.en
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ja.ja
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-ja 1000000 examples
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-my src_langtok: 250002; tgt_langtok: 250001
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 24,594 examples from: examples/multilingual/multidata/train.en-my.en
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 24,594 examples from: examples/multilingual/multidata/train.en-my.my
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-my 24594 examples
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ro src_langtok: 250002; tgt_langtok: 250007
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ro.en
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ro.ro
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-ro 1000000 examples
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-ru src_langtok: 250002; tgt_langtok: 250003
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ru.en
+2023-09-12 18:27:57 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ru.ru
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-ru 1000000 examples
+2023-09-12 18:27:57 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-vi src_langtok: 250002; tgt_langtok: 250004
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-vi.en
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-vi.vi
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-vi 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:en-zh src_langtok: 250002; tgt_langtok: 250012
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-zh.en
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-zh.zh
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train en-zh 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:zh-en src_langtok: 250012; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-zh.zh
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-zh.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train zh-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:vi-en src_langtok: 250004; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-vi.vi
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-vi.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train vi-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ru-en src_langtok: 250003; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ru.ru
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ru.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train ru-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ro-en src_langtok: 250007; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ro.ro
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ro.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train ro-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:my-en src_langtok: 250001; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 24,594 examples from: examples/multilingual/multidata/train.en-my.my
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 24,594 examples from: examples/multilingual/multidata/train.en-my.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train my-en 24594 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:ja-en src_langtok: 250005; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ja.ja
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-ja.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train ja-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:gu-en src_langtok: 250025; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 318,306 examples from: examples/multilingual/multidata/train.en-gu.gu
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 318,306 examples from: examples/multilingual/multidata/train.en-gu.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train gu-en 318306 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:de-en src_langtok: 250006; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.de-en.de
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.de-en.en
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train de-en 1000000 examples
+2023-09-12 18:27:58 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:cs-en src_langtok: 250018; tgt_langtok: 250002
+2023-09-12 18:27:58 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.cs-en.cs
+2023-09-12 18:27:59 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.cs-en.en
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train cs-en 1000000 examples
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.multilingual_data_manager | main:fr-en src_langtok: 250008; tgt_langtok: 250002
+2023-09-12 18:27:59 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-fr.fr
+2023-09-12 18:27:59 | INFO | fairseq.data.data_utils | loaded 1,000,000 examples from: examples/multilingual/multidata/train.en-fr.en
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.multilingual_data_manager | examples/multilingual/multidata train fr-en 1000000 examples
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.multilingual_data_manager | estimated total data sizes of all shards used in sampling ratios: [('main:en-fr', 1000000), ('main:en-cs', 1000000), ('main:en-de', 1000000), ('main:en-gu', 318306), ('main:en-ja', 1000000), ('main:en-my', 24594), ('main:en-ro', 1000000), ('main:en-ru', 1000000), ('main:en-vi', 1000000), ('main:en-zh', 1000000), ('main:zh-en', 1000000), ('main:vi-en', 1000000), ('main:ru-en', 1000000), ('main:ro-en', 1000000), ('main:my-en', 24594), ('main:ja-en', 1000000), ('main:gu-en', 318306), ('main:de-en', 1000000), ('main:cs-en', 1000000), ('main:fr-en', 1000000)]. Note that if the data a shard has not been loaded yet, use the max known data size to approximate
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.sampling_method | selected sampler: temperature
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.multilingual_data_manager | | Upsample ratios: [('main:en-fr', 0.1531447021474567), ('main:en-cs', 0.1531447021474567), ('main:en-de', 0.1531447021474567), ('main:en-gu', 0.07139457196957742), ('main:en-ja', 0.1531447021474567), ('main:en-my', 0.01295154036210906), ('main:en-ro', 0.1531447021474567), ('main:en-ru', 0.1531447021474567), ('main:en-vi', 0.1531447021474567), ('main:en-zh', 0.1531447021474567), ('main:zh-en', 0.1531447021474567), ('main:vi-en', 0.1531447021474567), ('main:ru-en', 0.1531447021474567), ('main:ro-en', 0.1531447021474567), ('main:my-en', 0.01295154036210906), ('main:ja-en', 0.1531447021474567), ('main:gu-en', 0.07139457196957742), ('main:de-en', 0.1531447021474567), ('main:cs-en', 0.1531447021474567), ('main:fr-en', 0.1531447021474567)]
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.sampled_multi_dataset | [train] Raw sizes: {'main:en-fr': 1000000, 'main:en-cs': 1000000, 'main:en-de': 1000000, 'main:en-gu': 318306, 'main:en-ja': 1000000, 'main:en-my': 24594, 'main:en-ro': 1000000, 'main:en-ru': 1000000, 'main:en-vi': 1000000, 'main:en-zh': 1000000, 'main:zh-en': 1000000, 'main:vi-en': 1000000, 'main:ru-en': 1000000, 'main:ro-en': 1000000, 'main:my-en': 24594, 'main:ja-en': 1000000, 'main:gu-en': 318306, 'main:de-en': 1000000, 'main:cs-en': 1000000, 'main:fr-en': 1000000}; raw total size: 16685800
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.sampled_multi_dataset | [train] Resampled sizes: {'main:en-fr': 1000001, 'main:en-cs': 999999, 'main:en-de': 999999, 'main:en-gu': 466191, 'main:en-ja': 1000000, 'main:en-my': 84571, 'main:en-ro': 1000002, 'main:en-ru': 999999, 'main:en-vi': 1000000, 'main:en-zh': 999999, 'main:zh-en': 1000000, 'main:vi-en': 1000000, 'main:ru-en': 999999, 'main:ro-en': 1000002, 'main:my-en': 84570, 'main:ja-en': 999999, 'main:gu-en': 466190, 'main:de-en': 1000001, 'main:cs-en': 999999, 'main:fr-en': 1000000}; resampled total size: 17101521
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.sampled_multi_dataset | [train] Upsampling ratios: {'main:en-fr': 0.1531447021474567, 'main:en-cs': 0.1531447021474567, 'main:en-de': 0.1531447021474567, 'main:en-gu': 0.07139457196957742, 'main:en-ja': 0.1531447021474567, 'main:en-my': 0.01295154036210906, 'main:en-ro': 0.1531447021474567, 'main:en-ru': 0.1531447021474567, 'main:en-vi': 0.1531447021474567, 'main:en-zh': 0.1531447021474567, 'main:zh-en': 0.1531447021474567, 'main:vi-en': 0.1531447021474567, 'main:ru-en': 0.1531447021474567, 'main:ro-en': 0.1531447021474567, 'main:my-en': 0.01295154036210906, 'main:ja-en': 0.1531447021474567, 'main:gu-en': 0.07139457196957742, 'main:de-en': 0.1531447021474567, 'main:cs-en': 0.1531447021474567, 'main:fr-en': 0.1531447021474567}
+2023-09-12 18:27:59 | INFO | fairseq.data.multilingual.sampled_multi_dataset | [train] virtual dataset established time: 0:00:00.334809
+2023-09-12 18:27:59 | INFO | fairseq.tasks.translation_multi_simple_epoch | start batch sampler: mem usage: used=42564.375Mb; avail=465841.30859375Mb
+2023-09-12 18:28:00 | INFO | fairseq.data.multilingual.sampled_multi_dataset | sizes() calling time: 0:00:00.499481
+2023-09-12 18:28:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | [train] @batch_sampler order indices time: 0:00:04.342468
+2023-09-12 18:28:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=42480.89453125Mb; avail=465893.20703125Mb
+2023-09-12 18:28:04 | WARNING | fairseq.tasks.fairseq_task | 429 samples have invalid sizes and will be skipped, max_positions=(1024, 1024), first few sample ids=[8358435, 4443071, 8320064, 5650726, 7694325, 8926571, 7864582, 8267846, 6281232, 8124841]
+2023-09-12 18:28:04 | INFO | fairseq.tasks.translation_multi_simple_epoch | [train] @batch_sampler filter_by_size time: 0:00:00.727579
+2023-09-12 18:28:04 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=42689.87109375Mb; avail=465690.40625Mb
+2023-09-12 18:28:06 | INFO | fairseq.tasks.translation_multi_simple_epoch | [train] @batch_sampler batch_by_size time: 0:00:01.774291
+2023-09-12 18:28:06 | INFO | fairseq.tasks.translation_multi_simple_epoch | [train] per epoch batch_sampler set-up time: 0:00:06.845292
+2023-09-12 18:28:06 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=43050.12109375Mb; avail=465323.70703125Mb
+2023-09-12 18:28:06 | INFO | fairseq.data.iterators | grouped total_num_itrs = 184396
+2023-09-12 18:28:06 | INFO | fairseq.trainer | begin training epoch 1
+2023-09-12 18:28:06 | INFO | fairseq_cli.train | '**********Start pruning the model**********************'
+2023-09-12 18:28:06 | INFO | fairseq_cli.train | Start iterating over samples
+2023-09-12 18:28:32 | INFO | train_inner | epoch 001:    100 / 184396 loss=33.54, nll_loss=21.315, ppl=2.60903e+06, wps=6695, ups=4.17, wpb=1607.9, bsz=94.4, num_updates=100, lr=1.2e-06, gnorm=824.649, train_wall=25, gb_free=26.4, wall=42
+2023-09-12 18:28:56 | INFO | train_inner | epoch 001:    200 / 184396 loss=20.679, nll_loss=16.254, ppl=78155.7, wps=6713.3, ups=4.22, wpb=1591.4, bsz=98.4, num_updates=200, lr=2.4e-06, gnorm=340.808, train_wall=23, gb_free=24.3, wall=66
+2023-09-12 18:29:20 | INFO | train_inner | epoch 001:    300 / 184396 loss=17.19, nll_loss=13.458, ppl=11253, wps=6780.1, ups=4.21, wpb=1610.2, bsz=95.5, num_updates=300, lr=3.6e-06, gnorm=57.104, train_wall=23, gb_free=24.4, wall=89
+2023-09-12 18:29:43 | INFO | train_inner | epoch 001:    400 / 184396 loss=15.119, nll_loss=11.532, ppl=2961.87, wps=6722, ups=4.22, wpb=1592.8, bsz=93, num_updates=400, lr=4.8e-06, gnorm=33.189, train_wall=23, gb_free=26.3, wall=113
+2023-09-12 18:30:07 | INFO | train_inner | epoch 001:    500 / 184396 loss=13.721, nll_loss=10.09, ppl=1089.69, wps=6703.4, ups=4.2, wpb=1594.5, bsz=97.3, num_updates=500, lr=6e-06, gnorm=41.303, train_wall=23, gb_free=25.8, wall=137
+2023-09-12 18:30:31 | INFO | train_inner | epoch 001:    600 / 184396 loss=12.488, nll_loss=8.831, ppl=455.29, wps=6527.9, ups=4.28, wpb=1526.9, bsz=89.5, num_updates=600, lr=7.2e-06, gnorm=22.659, train_wall=23, gb_free=24, wall=160
+2023-09-12 18:30:54 | INFO | train_inner | epoch 001:    700 / 184396 loss=11.679, nll_loss=8.034, ppl=262.09, wps=6685.4, ups=4.25, wpb=1574.2, bsz=86.6, num_updates=700, lr=8.4e-06, gnorm=13.522, train_wall=23, gb_free=24.9, wall=184
+2023-09-12 18:31:18 | INFO | train_inner | epoch 001:    800 / 184396 loss=11.035, nll_loss=7.381, ppl=166.69, wps=6738.7, ups=4.25, wpb=1585.3, bsz=90.7, num_updates=800, lr=9.6e-06, gnorm=9.925, train_wall=23, gb_free=24.5, wall=207
+2023-09-12 18:31:41 | INFO | train_inner | epoch 001:    900 / 184396 loss=10.443, nll_loss=6.774, ppl=109.42, wps=6607.5, ups=4.24, wpb=1556.6, bsz=92.8, num_updates=900, lr=1.08e-05, gnorm=10.021, train_wall=23, gb_free=25.2, wall=231
+2023-09-12 18:32:05 | INFO | train_inner | epoch 001:   1000 / 184396 loss=9.991, nll_loss=6.377, ppl=83.11, wps=6667, ups=4.22, wpb=1578.8, bsz=82.9, num_updates=1000, lr=1.2e-05, gnorm=8.103, train_wall=23, gb_free=24.3, wall=255
+2023-09-12 18:32:29 | INFO | train_inner | epoch 001:   1100 / 184396 loss=9.742, nll_loss=6.129, ppl=69.96, wps=6723.6, ups=4.21, wpb=1597.7, bsz=94, num_updates=1100, lr=1.32e-05, gnorm=8.275, train_wall=23, gb_free=25.3, wall=278
+2023-09-12 18:32:52 | INFO | train_inner | epoch 001:   1200 / 184396 loss=9.351, nll_loss=5.715, ppl=52.54, wps=6771.4, ups=4.22, wpb=1602.8, bsz=95.5, num_updates=1200, lr=1.44e-05, gnorm=6.816, train_wall=23, gb_free=24, wall=302
+2023-09-12 18:33:16 | INFO | train_inner | epoch 001:   1300 / 184396 loss=9.195, nll_loss=5.591, ppl=48.22, wps=6784.1, ups=4.23, wpb=1602.2, bsz=94.6, num_updates=1300, lr=1.56e-05, gnorm=7.609, train_wall=23, gb_free=26.4, wall=326
+2023-09-12 18:33:39 | INFO | train_inner | epoch 001:   1400 / 184396 loss=9.014, nll_loss=5.426, ppl=42.99, wps=6664.7, ups=4.25, wpb=1568.5, bsz=91.7, num_updates=1400, lr=1.68e-05, gnorm=6.617, train_wall=23, gb_free=25.3, wall=349
+2023-09-12 18:34:03 | INFO | train_inner | epoch 001:   1500 / 184396 loss=8.842, nll_loss=5.263, ppl=38.41, wps=6543.8, ups=4.25, wpb=1539.2, bsz=90, num_updates=1500, lr=1.8e-05, gnorm=5.709, train_wall=23, gb_free=24.1, wall=373
+2023-09-12 18:34:27 | INFO | train_inner | epoch 001:   1600 / 184396 loss=8.733, nll_loss=5.17, ppl=36, wps=6637.3, ups=4.22, wpb=1572.4, bsz=94.5, num_updates=1600, lr=1.92e-05, gnorm=6.934, train_wall=23, gb_free=25.5, wall=396
+2023-09-12 18:34:51 | INFO | train_inner | epoch 001:   1700 / 184396 loss=8.643, nll_loss=5.107, ppl=34.46, wps=6802.2, ups=4.19, wpb=1621.8, bsz=101.4, num_updates=1700, lr=2.04e-05, gnorm=5.105, train_wall=24, gb_free=25.7, wall=420
+2023-09-12 18:35:14 | INFO | train_inner | epoch 001:   1800 / 184396 loss=8.512, nll_loss=4.982, ppl=31.6, wps=6684.6, ups=4.23, wpb=1581.3, bsz=100.1, num_updates=1800, lr=2.16e-05, gnorm=4.564, train_wall=23, gb_free=24.3, wall=444
+2023-09-12 18:35:38 | INFO | train_inner | epoch 001:   1900 / 184396 loss=8.42, nll_loss=4.902, ppl=29.89, wps=6878, ups=4.18, wpb=1647.4, bsz=97.5, num_updates=1900, lr=2.28e-05, gnorm=4.779, train_wall=24, gb_free=24.9, wall=468
+2023-09-12 18:36:02 | INFO | train_inner | epoch 001:   2000 / 184396 loss=8.359, nll_loss=4.85, ppl=28.84, wps=6664.3, ups=4.21, wpb=1584.3, bsz=89.8, num_updates=2000, lr=2.4e-05, gnorm=5.131, train_wall=23, gb_free=25.1, wall=492
+2023-09-12 18:36:25 | INFO | train_inner | epoch 001:   2100 / 184396 loss=8.292, nll_loss=4.779, ppl=27.46, wps=6617.1, ups=4.24, wpb=1560.1, bsz=98.5, num_updates=2100, lr=2.52e-05, gnorm=4.613, train_wall=23, gb_free=24.1, wall=515
+2023-09-12 18:36:49 | INFO | train_inner | epoch 001:   2200 / 184396 loss=8.194, nll_loss=4.679, ppl=25.62, wps=6629, ups=4.25, wpb=1558, bsz=84.5, num_updates=2200, lr=2.64e-05, gnorm=4.738, train_wall=23, gb_free=25.1, wall=539
+2023-09-12 18:37:13 | INFO | train_inner | epoch 001:   2300 / 184396 loss=8.286, nll_loss=4.792, ppl=27.7, wps=6653.4, ups=4.23, wpb=1572.8, bsz=89.8, num_updates=2300, lr=2.76e-05, gnorm=13.511, train_wall=23, gb_free=25.6, wall=562
+2023-09-12 18:37:36 | INFO | train_inner | epoch 001:   2400 / 184396 loss=8.213, nll_loss=4.734, ppl=26.61, wps=6771.7, ups=4.23, wpb=1600.3, bsz=95.1, num_updates=2400, lr=2.88e-05, gnorm=4.888, train_wall=23, gb_free=25, wall=586
+2023-09-12 18:38:00 | INFO | train_inner | epoch 001:   2500 / 184396 loss=8.183, nll_loss=4.709, ppl=26.15, wps=6642.6, ups=4.24, wpb=1566.2, bsz=91.7, num_updates=2500, lr=3e-05, gnorm=7.578, train_wall=23, gb_free=24.5, wall=609
+2023-09-12 18:38:23 | INFO | train_inner | epoch 001:   2600 / 184396 loss=8.088, nll_loss=4.602, ppl=24.29, wps=6747.7, ups=4.23, wpb=1593.5, bsz=95.6, num_updates=2600, lr=2.94174e-05, gnorm=8.126, train_wall=23, gb_free=24.7, wall=633
+2023-09-12 18:38:47 | INFO | train_inner | epoch 001:   2700 / 184396 loss=8.11, nll_loss=4.642, ppl=24.97, wps=6817.8, ups=4.22, wpb=1616.6, bsz=104.7, num_updates=2700, lr=2.88675e-05, gnorm=6.975, train_wall=23, gb_free=26.3, wall=657
+2023-09-12 18:39:11 | INFO | train_inner | epoch 001:   2800 / 184396 loss=8.035, nll_loss=4.56, ppl=23.59, wps=6674.2, ups=4.2, wpb=1588.5, bsz=100.7, num_updates=2800, lr=2.83473e-05, gnorm=3.587, train_wall=23, gb_free=24.2, wall=681
+2023-09-12 18:39:35 | INFO | train_inner | epoch 001:   2900 / 184396 loss=7.922, nll_loss=4.416, ppl=21.35, wps=6618.9, ups=4.24, wpb=1559.5, bsz=98.5, num_updates=2900, lr=2.78543e-05, gnorm=3.549, train_wall=23, gb_free=25.6, wall=704
+2023-09-12 18:39:58 | INFO | train_inner | epoch 001:   3000 / 184396 loss=7.901, nll_loss=4.4, ppl=21.11, wps=6709.9, ups=4.24, wpb=1582, bsz=90.3, num_updates=3000, lr=2.73861e-05, gnorm=3.472, train_wall=23, gb_free=25.5, wall=728
+2023-09-12 18:40:22 | INFO | train_inner | epoch 001:   3100 / 184396 loss=7.911, nll_loss=4.425, ppl=21.48, wps=6703.7, ups=4.24, wpb=1579.6, bsz=95.6, num_updates=3100, lr=2.69408e-05, gnorm=3.982, train_wall=23, gb_free=24.6, wall=751
+2023-09-12 18:40:45 | INFO | train_inner | epoch 001:   3200 / 184396 loss=8.075, nll_loss=4.623, ppl=24.64, wps=6609, ups=4.22, wpb=1565.2, bsz=92.4, num_updates=3200, lr=2.65165e-05, gnorm=4.878, train_wall=23, gb_free=26.3, wall=775
+2023-09-12 18:41:09 | INFO | train_inner | epoch 001:   3300 / 184396 loss=7.877, nll_loss=4.385, ppl=20.9, wps=6717.1, ups=4.23, wpb=1588.4, bsz=100, num_updates=3300, lr=2.61116e-05, gnorm=3.671, train_wall=23, gb_free=25, wall=799
+2023-09-12 18:41:33 | INFO | train_inner | epoch 001:   3400 / 184396 loss=7.777, nll_loss=4.272, ppl=19.32, wps=6745.3, ups=4.22, wpb=1598.1, bsz=89.9, num_updates=3400, lr=2.57248e-05, gnorm=3.26, train_wall=23, gb_free=25.8, wall=822
+2023-09-12 18:41:56 | INFO | train_inner | epoch 001:   3500 / 184396 loss=7.808, nll_loss=4.316, ppl=19.92, wps=6723.1, ups=4.25, wpb=1580.8, bsz=94.1, num_updates=3500, lr=2.53546e-05, gnorm=3.376, train_wall=23, gb_free=25.8, wall=846
+2023-09-12 18:42:20 | INFO | train_inner | epoch 001:   3600 / 184396 loss=7.723, nll_loss=4.211, ppl=18.53, wps=6738.8, ups=4.23, wpb=1592.5, bsz=91.6, num_updates=3600, lr=2.5e-05, gnorm=3.185, train_wall=23, gb_free=24.1, wall=869
+2023-09-12 18:42:44 | INFO | train_inner | epoch 001:   3700 / 184396 loss=7.755, nll_loss=4.255, ppl=19.1, wps=6851.4, ups=4.2, wpb=1632.2, bsz=88.2, num_updates=3700, lr=2.46598e-05, gnorm=3.021, train_wall=23, gb_free=26.5, wall=893
+2023-09-12 18:43:07 | INFO | train_inner | epoch 001:   3800 / 184396 loss=7.774, nll_loss=4.288, ppl=19.53, wps=6617, ups=4.31, wpb=1535.9, bsz=84.8, num_updates=3800, lr=2.43332e-05, gnorm=3.275, train_wall=23, gb_free=24.8, wall=917
+2023-09-12 18:43:31 | INFO | train_inner | epoch 001:   3900 / 184396 loss=7.712, nll_loss=4.209, ppl=18.49, wps=6848.9, ups=4.21, wpb=1628.4, bsz=86.4, num_updates=3900, lr=2.40192e-05, gnorm=3.109, train_wall=23, gb_free=24.5, wall=940
+2023-09-12 18:43:54 | INFO | train_inner | epoch 001:   4000 / 184396 loss=7.679, nll_loss=4.18, ppl=18.13, wps=6772.9, ups=4.24, wpb=1597.3, bsz=104, num_updates=4000, lr=2.37171e-05, gnorm=3.398, train_wall=23, gb_free=26, wall=964
+2023-09-12 18:44:18 | INFO | train_inner | epoch 001:   4100 / 184396 loss=7.758, nll_loss=4.275, ppl=19.37, wps=6648.3, ups=4.26, wpb=1560.8, bsz=81.1, num_updates=4100, lr=2.34261e-05, gnorm=3.025, train_wall=23, gb_free=24, wall=987
+2023-09-12 18:44:41 | INFO | train_inner | epoch 001:   4200 / 184396 loss=7.642, nll_loss=4.132, ppl=17.54, wps=6694.6, ups=4.25, wpb=1574.4, bsz=92.9, num_updates=4200, lr=2.31455e-05, gnorm=3.434, train_wall=23, gb_free=24.8, wall=1011
+2023-09-12 18:45:05 | INFO | train_inner | epoch 001:   4300 / 184396 loss=7.641, nll_loss=4.142, ppl=17.66, wps=6715.8, ups=4.24, wpb=1584.2, bsz=100.1, num_updates=4300, lr=2.28748e-05, gnorm=3.004, train_wall=23, gb_free=25.7, wall=1034
+2023-09-12 18:45:28 | INFO | train_inner | epoch 001:   4400 / 184396 loss=7.6, nll_loss=4.088, ppl=17.01, wps=6870.5, ups=4.23, wpb=1624.9, bsz=92.5, num_updates=4400, lr=2.26134e-05, gnorm=3.168, train_wall=23, gb_free=26.4, wall=1058
+2023-09-12 18:45:52 | INFO | train_inner | epoch 001:   4500 / 184396 loss=7.595, nll_loss=4.091, ppl=17.04, wps=6836.9, ups=4.25, wpb=1607.3, bsz=100.3, num_updates=4500, lr=2.23607e-05, gnorm=2.82, train_wall=23, gb_free=24.5, wall=1082
+2023-09-12 18:46:16 | INFO | train_inner | epoch 001:   4600 / 184396 loss=7.604, nll_loss=4.102, ppl=17.17, wps=6745, ups=4.24, wpb=1589.2, bsz=90.4, num_updates=4600, lr=2.21163e-05, gnorm=2.892, train_wall=23, gb_free=24.2, wall=1105
+2023-09-12 18:46:39 | INFO | train_inner | epoch 001:   4700 / 184396 loss=7.519, nll_loss=3.995, ppl=15.95, wps=6662, ups=4.28, wpb=1556, bsz=92.7, num_updates=4700, lr=2.18797e-05, gnorm=2.947, train_wall=23, gb_free=23.2, wall=1129
+2023-09-12 18:47:03 | INFO | train_inner | epoch 001:   4800 / 184396 loss=7.611, nll_loss=4.117, ppl=17.35, wps=6854, ups=4.21, wpb=1627.5, bsz=90.9, num_updates=4800, lr=2.16506e-05, gnorm=2.956, train_wall=23, gb_free=24.9, wall=1152
+2023-09-12 18:47:26 | INFO | train_inner | epoch 001:   4900 / 184396 loss=7.631, nll_loss=4.144, ppl=17.68, wps=6655.1, ups=4.29, wpb=1549.5, bsz=86.1, num_updates=4900, lr=2.14286e-05, gnorm=2.956, train_wall=23, gb_free=25.6, wall=1176
+2023-09-12 18:47:49 | INFO | train_inner | epoch 001:   5000 / 184396 loss=7.493, nll_loss=3.973, ppl=15.71, wps=6656.3, ups=4.24, wpb=1568.7, bsz=98.6, num_updates=5000, lr=2.12132e-05, gnorm=3.722, train_wall=23, gb_free=26.3, wall=1199
+2023-09-12 18:48:13 | INFO | train_inner | epoch 001:   5100 / 184396 loss=7.591, nll_loss=4.098, ppl=17.13, wps=6712.5, ups=4.26, wpb=1576.3, bsz=86.3, num_updates=5100, lr=2.10042e-05, gnorm=2.989, train_wall=23, gb_free=24.2, wall=1223
+2023-09-12 18:48:36 | INFO | train_inner | epoch 001:   5200 / 184396 loss=7.568, nll_loss=4.073, ppl=16.83, wps=6654.7, ups=4.26, wpb=1563.8, bsz=88.6, num_updates=5200, lr=2.08013e-05, gnorm=2.801, train_wall=23, gb_free=24.1, wall=1246
+2023-09-12 18:49:00 | INFO | train_inner | epoch 001:   5300 / 184396 loss=7.512, nll_loss=4.01, ppl=16.11, wps=6919.9, ups=4.21, wpb=1643.2, bsz=111.3, num_updates=5300, lr=2.06041e-05, gnorm=2.659, train_wall=23, gb_free=24.6, wall=1270
+2023-09-12 18:49:24 | INFO | train_inner | epoch 001:   5400 / 184396 loss=7.536, nll_loss=4.035, ppl=16.4, wps=6850.5, ups=4.23, wpb=1618.9, bsz=95.2, num_updates=5400, lr=2.04124e-05, gnorm=3.561, train_wall=23, gb_free=25.4, wall=1294
+2023-09-12 18:49:48 | INFO | train_inner | epoch 001:   5500 / 184396 loss=7.53, nll_loss=4.032, ppl=16.36, wps=6934.9, ups=4.19, wpb=1656.5, bsz=93.8, num_updates=5500, lr=2.0226e-05, gnorm=3.289, train_wall=24, gb_free=24.4, wall=1317
+2023-09-12 18:50:11 | INFO | train_inner | epoch 001:   5600 / 184396 loss=7.488, nll_loss=3.98, ppl=15.78, wps=6725.9, ups=4.25, wpb=1582.8, bsz=92.2, num_updates=5600, lr=2.00446e-05, gnorm=3.358, train_wall=23, gb_free=25.8, wall=1341
+2023-09-12 18:50:35 | INFO | train_inner | epoch 001:   5700 / 184396 loss=7.487, nll_loss=3.982, ppl=15.8, wps=6640.2, ups=4.27, wpb=1554.5, bsz=94.4, num_updates=5700, lr=1.9868e-05, gnorm=2.723, train_wall=23, gb_free=24.8, wall=1364
+2023-09-12 18:50:58 | INFO | train_inner | epoch 001:   5800 / 184396 loss=7.49, nll_loss=3.982, ppl=15.8, wps=6693.4, ups=4.25, wpb=1574.1, bsz=86.8, num_updates=5800, lr=1.9696e-05, gnorm=2.705, train_wall=23, gb_free=25, wall=1388
+2023-09-12 18:51:22 | INFO | train_inner | epoch 001:   5900 / 184396 loss=7.519, nll_loss=4.018, ppl=16.2, wps=6766.8, ups=4.23, wpb=1600.6, bsz=77.8, num_updates=5900, lr=1.95283e-05, gnorm=2.729, train_wall=23, gb_free=25.6, wall=1412
+2023-09-12 18:51:45 | INFO | train_inner | epoch 001:   6000 / 184396 loss=7.433, nll_loss=3.918, ppl=15.11, wps=6786.2, ups=4.24, wpb=1598.8, bsz=95.1, num_updates=6000, lr=1.93649e-05, gnorm=2.618, train_wall=23, gb_free=25, wall=1435
+2023-09-12 18:52:09 | INFO | train_inner | epoch 001:   6100 / 184396 loss=7.453, nll_loss=3.941, ppl=15.35, wps=6784, ups=4.22, wpb=1606.1, bsz=89.3, num_updates=6100, lr=1.92055e-05, gnorm=2.77, train_wall=23, gb_free=26.1, wall=1459
+2023-09-12 18:52:33 | INFO | train_inner | epoch 001:   6200 / 184396 loss=7.412, nll_loss=3.897, ppl=14.9, wps=6678.7, ups=4.26, wpb=1566.6, bsz=95.2, num_updates=6200, lr=1.905e-05, gnorm=2.666, train_wall=23, gb_free=26.1, wall=1482
+2023-09-12 18:52:56 | INFO | train_inner | epoch 001:   6300 / 184396 loss=7.457, nll_loss=3.952, ppl=15.47, wps=6603.8, ups=4.3, wpb=1537.3, bsz=86.5, num_updates=6300, lr=1.88982e-05, gnorm=4.14, train_wall=23, gb_free=24.9, wall=1505
+2023-09-12 18:53:19 | INFO | train_inner | epoch 001:   6400 / 184396 loss=7.478, nll_loss=3.982, ppl=15.8, wps=6735.4, ups=4.23, wpb=1591.3, bsz=87, num_updates=6400, lr=1.875e-05, gnorm=2.7, train_wall=23, gb_free=25.3, wall=1529
+2023-09-12 18:53:43 | INFO | train_inner | epoch 001:   6500 / 184396 loss=7.429, nll_loss=3.927, ppl=15.21, wps=6706.5, ups=4.25, wpb=1579, bsz=105.2, num_updates=6500, lr=1.86052e-05, gnorm=2.716, train_wall=23, gb_free=26.4, wall=1553
+2023-09-12 18:54:07 | INFO | train_inner | epoch 001:   6600 / 184396 loss=7.517, nll_loss=4.038, ppl=16.43, wps=6780.9, ups=4.23, wpb=1601.3, bsz=97.2, num_updates=6600, lr=1.84637e-05, gnorm=2.714, train_wall=23, gb_free=26.2, wall=1576
+2023-09-12 18:54:30 | INFO | train_inner | epoch 001:   6700 / 184396 loss=7.325, nll_loss=3.796, ppl=13.89, wps=6840.3, ups=4.23, wpb=1618.5, bsz=103.3, num_updates=6700, lr=1.83254e-05, gnorm=2.742, train_wall=23, gb_free=26.2, wall=1600
+2023-09-12 18:54:54 | INFO | train_inner | epoch 001:   6800 / 184396 loss=7.426, nll_loss=3.922, ppl=15.16, wps=6808.4, ups=4.22, wpb=1613.7, bsz=95.7, num_updates=6800, lr=1.81902e-05, gnorm=2.774, train_wall=23, gb_free=24, wall=1624
+2023-09-12 18:55:17 | INFO | train_inner | epoch 001:   6900 / 184396 loss=7.449, nll_loss=3.954, ppl=15.5, wps=6769.7, ups=4.25, wpb=1591.5, bsz=100.7, num_updates=6900, lr=1.80579e-05, gnorm=2.776, train_wall=23, gb_free=25.9, wall=1647
+2023-09-12 18:55:41 | INFO | train_inner | epoch 001:   7000 / 184396 loss=7.39, nll_loss=3.876, ppl=14.68, wps=6717.3, ups=4.24, wpb=1586, bsz=85.9, num_updates=7000, lr=1.79284e-05, gnorm=2.748, train_wall=23, gb_free=24.1, wall=1671
+2023-09-12 18:56:04 | INFO | train_inner | epoch 001:   7100 / 184396 loss=7.422, nll_loss=3.923, ppl=15.17, wps=6679.2, ups=4.29, wpb=1557.6, bsz=90.4, num_updates=7100, lr=1.78017e-05, gnorm=2.724, train_wall=23, gb_free=26.4, wall=1694
+2023-09-12 18:56:28 | INFO | train_inner | epoch 001:   7200 / 184396 loss=7.376, nll_loss=3.875, ppl=14.67, wps=6715.8, ups=4.26, wpb=1577.2, bsz=112.4, num_updates=7200, lr=1.76777e-05, gnorm=2.559, train_wall=23, gb_free=24.6, wall=1718
+2023-09-12 18:56:51 | INFO | train_inner | epoch 001:   7300 / 184396 loss=7.521, nll_loss=4.054, ppl=16.61, wps=6729.8, ups=4.26, wpb=1581.3, bsz=89.2, num_updates=7300, lr=1.75562e-05, gnorm=2.635, train_wall=23, gb_free=25.9, wall=1741
+2023-09-12 18:57:15 | INFO | train_inner | epoch 001:   7400 / 184396 loss=7.351, nll_loss=3.836, ppl=14.28, wps=6760.6, ups=4.25, wpb=1590.5, bsz=95.3, num_updates=7400, lr=1.74371e-05, gnorm=2.653, train_wall=23, gb_free=24.1, wall=1765
+2023-09-12 18:57:39 | INFO | train_inner | epoch 001:   7500 / 184396 loss=7.352, nll_loss=3.841, ppl=14.33, wps=6898.4, ups=4.19, wpb=1646.5, bsz=102.9, num_updates=7500, lr=1.73205e-05, gnorm=2.608, train_wall=24, gb_free=24.3, wall=1788
+2023-09-12 18:58:02 | INFO | train_inner | epoch 001:   7600 / 184396 loss=7.363, nll_loss=3.851, ppl=14.43, wps=6566.4, ups=4.31, wpb=1524.3, bsz=81.3, num_updates=7600, lr=1.72062e-05, gnorm=2.95, train_wall=23, gb_free=26.5, wall=1812
+2023-09-12 18:58:26 | INFO | train_inner | epoch 001:   7700 / 184396 loss=7.323, nll_loss=3.803, ppl=13.95, wps=6712.5, ups=4.22, wpb=1590.2, bsz=97.6, num_updates=7700, lr=1.70941e-05, gnorm=2.474, train_wall=23, gb_free=25.3, wall=1835
+2023-09-12 18:58:49 | INFO | train_inner | epoch 001:   7800 / 184396 loss=7.299, nll_loss=3.776, ppl=13.7, wps=6843.9, ups=4.22, wpb=1620.3, bsz=95.6, num_updates=7800, lr=1.69842e-05, gnorm=2.536, train_wall=23, gb_free=24.2, wall=1859
+2023-09-12 18:59:13 | INFO | train_inner | epoch 001:   7900 / 184396 loss=7.252, nll_loss=3.717, ppl=13.15, wps=6759.9, ups=4.21, wpb=1604.8, bsz=95.4, num_updates=7900, lr=1.68763e-05, gnorm=2.535, train_wall=23, gb_free=24.3, wall=1883
+2023-09-12 18:59:37 | INFO | train_inner | epoch 001:   8000 / 184396 loss=7.368, nll_loss=3.862, ppl=14.54, wps=6665.5, ups=4.26, wpb=1565.2, bsz=86.8, num_updates=8000, lr=1.67705e-05, gnorm=2.761, train_wall=23, gb_free=25.8, wall=1906
+2023-09-12 19:00:00 | INFO | train_inner | epoch 001:   8100 / 184396 loss=7.333, nll_loss=3.822, ppl=14.14, wps=6675.8, ups=4.29, wpb=1557.5, bsz=91, num_updates=8100, lr=1.66667e-05, gnorm=2.786, train_wall=23, gb_free=24.5, wall=1930
+2023-09-12 19:00:24 | INFO | train_inner | epoch 001:   8200 / 184396 loss=7.304, nll_loss=3.785, ppl=13.78, wps=6716, ups=4.23, wpb=1587.8, bsz=94.8, num_updates=8200, lr=1.65647e-05, gnorm=2.575, train_wall=23, gb_free=25.2, wall=1953
+2023-09-12 19:00:47 | INFO | train_inner | epoch 001:   8300 / 184396 loss=7.308, nll_loss=3.792, ppl=13.85, wps=6741.9, ups=4.23, wpb=1593.2, bsz=94.4, num_updates=8300, lr=1.64646e-05, gnorm=2.687, train_wall=23, gb_free=25.8, wall=1977
+2023-09-12 19:01:11 | INFO | train_inner | epoch 001:   8400 / 184396 loss=7.324, nll_loss=3.815, ppl=14.07, wps=6594.3, ups=4.25, wpb=1549.9, bsz=90.2, num_updates=8400, lr=1.63663e-05, gnorm=2.658, train_wall=23, gb_free=25.3, wall=2000
+2023-09-12 19:01:34 | INFO | train_inner | epoch 001:   8500 / 184396 loss=7.3, nll_loss=3.786, ppl=13.8, wps=6691, ups=4.26, wpb=1572.2, bsz=97.2, num_updates=8500, lr=1.62698e-05, gnorm=2.691, train_wall=23, gb_free=24.8, wall=2024
+2023-09-12 19:01:58 | INFO | train_inner | epoch 001:   8600 / 184396 loss=7.349, nll_loss=3.841, ppl=14.33, wps=6648.7, ups=4.27, wpb=1558, bsz=81, num_updates=8600, lr=1.61749e-05, gnorm=2.484, train_wall=23, gb_free=24.7, wall=2047
+2023-09-12 19:02:21 | INFO | train_inner | epoch 001:   8700 / 184396 loss=7.266, nll_loss=3.739, ppl=13.35, wps=6755.9, ups=4.25, wpb=1590.6, bsz=87.7, num_updates=8700, lr=1.60817e-05, gnorm=2.51, train_wall=23, gb_free=25.2, wall=2071
+2023-09-12 19:02:45 | INFO | train_inner | epoch 001:   8800 / 184396 loss=7.284, nll_loss=3.771, ppl=13.65, wps=6808.2, ups=4.21, wpb=1616.6, bsz=104.7, num_updates=8800, lr=1.59901e-05, gnorm=2.632, train_wall=23, gb_free=24.5, wall=2095
+2023-09-12 19:03:09 | INFO | train_inner | epoch 001:   8900 / 184396 loss=7.309, nll_loss=3.801, ppl=13.94, wps=6828.6, ups=4.23, wpb=1614.6, bsz=100.2, num_updates=8900, lr=1.59e-05, gnorm=2.465, train_wall=23, gb_free=25.2, wall=2118
+2023-09-12 19:03:32 | INFO | train_inner | epoch 001:   9000 / 184396 loss=7.311, nll_loss=3.796, ppl=13.89, wps=6821.5, ups=4.24, wpb=1610.5, bsz=80.6, num_updates=9000, lr=1.58114e-05, gnorm=2.626, train_wall=23, gb_free=25.4, wall=2142
+2023-09-12 19:03:56 | INFO | train_inner | epoch 001:   9100 / 184396 loss=7.285, nll_loss=3.769, ppl=13.63, wps=6675, ups=4.24, wpb=1575.5, bsz=88.2, num_updates=9100, lr=1.57243e-05, gnorm=2.658, train_wall=23, gb_free=25.8, wall=2165
+2023-09-12 19:04:19 | INFO | train_inner | epoch 001:   9200 / 184396 loss=7.241, nll_loss=3.716, ppl=13.14, wps=6698, ups=4.27, wpb=1568.6, bsz=91.3, num_updates=9200, lr=1.56386e-05, gnorm=2.529, train_wall=23, gb_free=24.2, wall=2189
+2023-09-12 19:04:43 | INFO | train_inner | epoch 001:   9300 / 184396 loss=7.33, nll_loss=3.826, ppl=14.18, wps=6724.4, ups=4.24, wpb=1584.8, bsz=85.2, num_updates=9300, lr=1.55543e-05, gnorm=2.593, train_wall=23, gb_free=25.3, wall=2212
+2023-09-12 19:05:06 | INFO | train_inner | epoch 001:   9400 / 184396 loss=7.341, nll_loss=3.842, ppl=14.34, wps=6481.9, ups=4.32, wpb=1499.3, bsz=81.3, num_updates=9400, lr=1.54713e-05, gnorm=2.716, train_wall=23, gb_free=24.1, wall=2236
+2023-09-12 19:05:29 | INFO | train_inner | epoch 001:   9500 / 184396 loss=7.214, nll_loss=3.688, ppl=12.89, wps=6698.9, ups=4.26, wpb=1573.4, bsz=101.4, num_updates=9500, lr=1.53897e-05, gnorm=2.691, train_wall=23, gb_free=23.1, wall=2259
+2023-09-12 19:05:53 | INFO | train_inner | epoch 001:   9600 / 184396 loss=7.279, nll_loss=3.769, ppl=13.63, wps=6649.4, ups=4.27, wpb=1558.3, bsz=95.8, num_updates=9600, lr=1.53093e-05, gnorm=2.421, train_wall=23, gb_free=26.1, wall=2282
+2023-09-12 19:06:16 | INFO | train_inner | epoch 001:   9700 / 184396 loss=7.26, nll_loss=3.746, ppl=13.41, wps=6687.8, ups=4.25, wpb=1572.9, bsz=95.8, num_updates=9700, lr=1.52302e-05, gnorm=2.463, train_wall=23, gb_free=25.9, wall=2306
+2023-09-12 19:06:40 | INFO | train_inner | epoch 001:   9800 / 184396 loss=7.193, nll_loss=3.66, ppl=12.64, wps=6729.3, ups=4.25, wpb=1584.1, bsz=95.7, num_updates=9800, lr=1.51523e-05, gnorm=2.47, train_wall=23, gb_free=25, wall=2330
+2023-09-12 19:07:03 | INFO | train_inner | epoch 001:   9900 / 184396 loss=7.267, nll_loss=3.75, ppl=13.45, wps=6700.9, ups=4.25, wpb=1575, bsz=88.4, num_updates=9900, lr=1.50756e-05, gnorm=2.738, train_wall=23, gb_free=24.8, wall=2353
+2023-09-12 19:07:27 | INFO | train_inner | epoch 001:  10000 / 184396 loss=7.246, nll_loss=3.729, ppl=13.26, wps=6592.6, ups=4.26, wpb=1546.7, bsz=89.2, num_updates=10000, lr=1.5e-05, gnorm=2.603, train_wall=23, gb_free=24.4, wall=2376
+2023-09-12 19:07:50 | INFO | train_inner | epoch 001:  10100 / 184396 loss=7.271, nll_loss=3.757, ppl=13.52, wps=6632.8, ups=4.28, wpb=1551, bsz=86.2, num_updates=10100, lr=1.49256e-05, gnorm=2.599, train_wall=23, gb_free=26.2, wall=2400
+2023-09-12 19:08:14 | INFO | train_inner | epoch 001:  10200 / 184396 loss=7.316, nll_loss=3.818, ppl=14.1, wps=6778.3, ups=4.23, wpb=1602.3, bsz=78.1, num_updates=10200, lr=1.48522e-05, gnorm=2.547, train_wall=23, gb_free=25.9, wall=2424
+2023-09-12 19:08:37 | INFO | train_inner | epoch 001:  10300 / 184396 loss=7.26, nll_loss=3.752, ppl=13.47, wps=6776.7, ups=4.25, wpb=1596.1, bsz=98.2, num_updates=10300, lr=1.47799e-05, gnorm=2.527, train_wall=23, gb_free=24.5, wall=2447
+2023-09-12 19:09:01 | INFO | train_inner | epoch 001:  10400 / 184396 loss=7.202, nll_loss=3.68, ppl=12.81, wps=6677.3, ups=4.27, wpb=1564.6, bsz=96.6, num_updates=10400, lr=1.47087e-05, gnorm=2.443, train_wall=23, gb_free=24.5, wall=2471
+2023-09-12 19:09:25 | INFO | train_inner | epoch 001:  10500 / 184396 loss=7.229, nll_loss=3.715, ppl=13.13, wps=6743.2, ups=4.22, wpb=1597.8, bsz=95.8, num_updates=10500, lr=1.46385e-05, gnorm=2.437, train_wall=23, gb_free=24.6, wall=2494
+2023-09-12 19:09:48 | INFO | train_inner | epoch 001:  10600 / 184396 loss=7.242, nll_loss=3.728, ppl=13.25, wps=6826.6, ups=4.21, wpb=1621.1, bsz=94.9, num_updates=10600, lr=1.45693e-05, gnorm=2.393, train_wall=23, gb_free=24.7, wall=2518
+2023-09-12 19:10:12 | INFO | train_inner | epoch 001:  10700 / 184396 loss=7.251, nll_loss=3.74, ppl=13.36, wps=6638.8, ups=4.28, wpb=1550.3, bsz=91.6, num_updates=10700, lr=1.4501e-05, gnorm=2.564, train_wall=23, gb_free=24.5, wall=2541
+2023-09-12 19:10:35 | INFO | train_inner | epoch 001:  10800 / 184396 loss=7.259, nll_loss=3.751, ppl=13.46, wps=6820.1, ups=4.24, wpb=1609.5, bsz=92.7, num_updates=10800, lr=1.44338e-05, gnorm=2.384, train_wall=23, gb_free=24.2, wall=2565
+2023-09-12 19:10:59 | INFO | train_inner | epoch 001:  10900 / 184396 loss=7.225, nll_loss=3.712, ppl=13.1, wps=6662.5, ups=4.24, wpb=1571.9, bsz=96.3, num_updates=10900, lr=1.43674e-05, gnorm=2.567, train_wall=23, gb_free=25.4, wall=2588
+2023-09-12 19:11:22 | INFO | train_inner | epoch 001:  11000 / 184396 loss=7.213, nll_loss=3.701, ppl=13, wps=6753.2, ups=4.25, wpb=1589.7, bsz=107.6, num_updates=11000, lr=1.43019e-05, gnorm=2.44, train_wall=23, gb_free=25.6, wall=2612
+2023-09-12 19:11:46 | INFO | train_inner | epoch 001:  11100 / 184396 loss=7.224, nll_loss=3.708, ppl=13.07, wps=6749.7, ups=4.23, wpb=1596.8, bsz=91.1, num_updates=11100, lr=1.42374e-05, gnorm=2.49, train_wall=23, gb_free=25.6, wall=2636
+2023-09-12 19:12:09 | INFO | train_inner | epoch 001:  11200 / 184396 loss=7.231, nll_loss=3.716, ppl=13.14, wps=6568.7, ups=4.3, wpb=1528.6, bsz=88.6, num_updates=11200, lr=1.41737e-05, gnorm=2.584, train_wall=23, gb_free=26.4, wall=2659
+2023-09-12 19:12:33 | INFO | train_inner | epoch 001:  11300 / 184396 loss=7.187, nll_loss=3.668, ppl=12.71, wps=6883.5, ups=4.21, wpb=1636, bsz=108.1, num_updates=11300, lr=1.41108e-05, gnorm=2.397, train_wall=23, gb_free=23.9, wall=2683
+2023-09-12 19:12:57 | INFO | train_inner | epoch 001:  11400 / 184396 loss=7.145, nll_loss=3.61, ppl=12.21, wps=6923.7, ups=4.18, wpb=1657.3, bsz=103.3, num_updates=11400, lr=1.40488e-05, gnorm=2.375, train_wall=24, gb_free=24.3, wall=2707
+2023-09-12 19:13:21 | INFO | train_inner | epoch 001:  11500 / 184396 loss=7.299, nll_loss=3.81, ppl=14.03, wps=6692.2, ups=4.25, wpb=1573.7, bsz=95.8, num_updates=11500, lr=1.39876e-05, gnorm=2.533, train_wall=23, gb_free=25.3, wall=2730
+2023-09-12 19:13:44 | INFO | train_inner | epoch 001:  11600 / 184396 loss=7.197, nll_loss=3.684, ppl=12.85, wps=6692, ups=4.26, wpb=1569.9, bsz=102.3, num_updates=11600, lr=1.39272e-05, gnorm=2.375, train_wall=23, gb_free=26.4, wall=2754
+2023-09-12 19:14:07 | INFO | train_inner | epoch 001:  11700 / 184396 loss=7.228, nll_loss=3.715, ppl=13.13, wps=6690, ups=4.27, wpb=1566.3, bsz=92.2, num_updates=11700, lr=1.38675e-05, gnorm=2.552, train_wall=23, gb_free=25.9, wall=2777
+2023-09-12 19:14:31 | INFO | train_inner | epoch 001:  11800 / 184396 loss=7.214, nll_loss=3.7, ppl=13, wps=6682.2, ups=4.23, wpb=1579.9, bsz=90.4, num_updates=11800, lr=1.38086e-05, gnorm=2.361, train_wall=23, gb_free=24.6, wall=2801
+2023-09-12 19:14:54 | INFO | train_inner | epoch 001:  11900 / 184396 loss=7.252, nll_loss=3.749, ppl=13.45, wps=6662.2, ups=4.27, wpb=1559.2, bsz=88.5, num_updates=11900, lr=1.37505e-05, gnorm=2.436, train_wall=23, gb_free=25.4, wall=2824
+2023-09-12 19:15:18 | INFO | train_inner | epoch 001:  12000 / 184396 loss=7.262, nll_loss=3.76, ppl=13.55, wps=6626.8, ups=4.28, wpb=1549, bsz=83.3, num_updates=12000, lr=1.36931e-05, gnorm=2.441, train_wall=23, gb_free=25.6, wall=2847
+2023-09-12 19:15:41 | INFO | train_inner | epoch 001:  12100 / 184396 loss=7.245, nll_loss=3.741, ppl=13.37, wps=6665.5, ups=4.28, wpb=1558.4, bsz=93.9, num_updates=12100, lr=1.36364e-05, gnorm=2.488, train_wall=23, gb_free=23.6, wall=2871
+2023-09-12 19:16:05 | INFO | train_inner | epoch 001:  12200 / 184396 loss=7.185, nll_loss=3.664, ppl=12.68, wps=6807.6, ups=4.24, wpb=1605.2, bsz=88.8, num_updates=12200, lr=1.35804e-05, gnorm=2.484, train_wall=23, gb_free=25.3, wall=2894
+2023-09-12 19:16:28 | INFO | train_inner | epoch 001:  12300 / 184396 loss=7.176, nll_loss=3.655, ppl=12.6, wps=6841.7, ups=4.22, wpb=1621.5, bsz=105.5, num_updates=12300, lr=1.3525e-05, gnorm=2.377, train_wall=23, gb_free=24.5, wall=2918
+2023-09-12 19:16:52 | INFO | train_inner | epoch 001:  12400 / 184396 loss=7.23, nll_loss=3.724, ppl=13.21, wps=6881.5, ups=4.21, wpb=1635.6, bsz=96.2, num_updates=12400, lr=1.34704e-05, gnorm=2.399, train_wall=23, gb_free=25.3, wall=2942
+2023-09-12 19:17:16 | INFO | train_inner | epoch 001:  12500 / 184396 loss=7.185, nll_loss=3.663, ppl=12.67, wps=6836.1, ups=4.24, wpb=1611.6, bsz=87.5, num_updates=12500, lr=1.34164e-05, gnorm=2.522, train_wall=23, gb_free=24.8, wall=2965
+2023-09-12 19:17:39 | INFO | train_inner | epoch 001:  12600 / 184396 loss=7.204, nll_loss=3.69, ppl=12.91, wps=6764.4, ups=4.26, wpb=1589.2, bsz=89.3, num_updates=12600, lr=1.33631e-05, gnorm=2.585, train_wall=23, gb_free=26.1, wall=2989
+2023-09-12 19:18:03 | INFO | train_inner | epoch 001:  12700 / 184396 loss=7.23, nll_loss=3.726, ppl=13.23, wps=6709.8, ups=4.24, wpb=1582.6, bsz=88.2, num_updates=12700, lr=1.33103e-05, gnorm=2.447, train_wall=23, gb_free=23.3, wall=3013
+2023-09-12 19:18:27 | INFO | train_inner | epoch 001:  12800 / 184396 loss=7.165, nll_loss=3.647, ppl=12.52, wps=6876, ups=4.22, wpb=1628.7, bsz=96.1, num_updates=12800, lr=1.32583e-05, gnorm=2.371, train_wall=23, gb_free=26.1, wall=3036
+2023-09-12 19:18:50 | INFO | train_inner | epoch 001:  12900 / 184396 loss=7.176, nll_loss=3.659, ppl=12.63, wps=6763.3, ups=4.22, wpb=1604.4, bsz=94.5, num_updates=12900, lr=1.32068e-05, gnorm=2.342, train_wall=23, gb_free=25.1, wall=3060
+2023-09-12 19:19:14 | INFO | train_inner | epoch 001:  13000 / 184396 loss=7.192, nll_loss=3.679, ppl=12.81, wps=6723.7, ups=4.26, wpb=1579.4, bsz=95.8, num_updates=13000, lr=1.31559e-05, gnorm=2.448, train_wall=23, gb_free=25.2, wall=3083
+2023-09-12 19:19:37 | INFO | train_inner | epoch 001:  13100 / 184396 loss=7.206, nll_loss=3.693, ppl=12.93, wps=6839.7, ups=4.23, wpb=1615.9, bsz=88.2, num_updates=13100, lr=1.31056e-05, gnorm=2.395, train_wall=23, gb_free=24.1, wall=3107
+2023-09-12 19:20:01 | INFO | train_inner | epoch 001:  13200 / 184396 loss=7.155, nll_loss=3.63, ppl=12.38, wps=6640.8, ups=4.26, wpb=1560.1, bsz=88.2, num_updates=13200, lr=1.30558e-05, gnorm=2.473, train_wall=23, gb_free=25.1, wall=3131
+2023-09-12 19:20:25 | INFO | train_inner | epoch 001:  13300 / 184396 loss=7.168, nll_loss=3.652, ppl=12.57, wps=6812.4, ups=4.21, wpb=1617.5, bsz=99, num_updates=13300, lr=1.30066e-05, gnorm=2.426, train_wall=23, gb_free=24, wall=3154
+2023-09-12 19:20:48 | INFO | train_inner | epoch 001:  13400 / 184396 loss=7.168, nll_loss=3.648, ppl=12.54, wps=6727.4, ups=4.27, wpb=1577.2, bsz=91.2, num_updates=13400, lr=1.2958e-05, gnorm=2.346, train_wall=23, gb_free=24.7, wall=3178
+2023-09-12 19:21:11 | INFO | train_inner | epoch 001:  13500 / 184396 loss=7.18, nll_loss=3.669, ppl=12.72, wps=6621.8, ups=4.29, wpb=1544.3, bsz=93.9, num_updates=13500, lr=1.29099e-05, gnorm=2.507, train_wall=23, gb_free=26.3, wall=3201
+2023-09-12 19:21:35 | INFO | train_inner | epoch 001:  13600 / 184396 loss=7.177, nll_loss=3.666, ppl=12.69, wps=6689.4, ups=4.26, wpb=1570.6, bsz=93.7, num_updates=13600, lr=1.28624e-05, gnorm=2.416, train_wall=23, gb_free=24.1, wall=3225
+2023-09-12 19:21:58 | INFO | train_inner | epoch 001:  13700 / 184396 loss=7.123, nll_loss=3.597, ppl=12.1, wps=6785.8, ups=4.26, wpb=1593.2, bsz=92.6, num_updates=13700, lr=1.28154e-05, gnorm=2.343, train_wall=23, gb_free=26.2, wall=3248
+2023-09-12 19:22:22 | INFO | train_inner | epoch 001:  13800 / 184396 loss=7.169, nll_loss=3.653, ppl=12.58, wps=6662.3, ups=4.25, wpb=1567.6, bsz=85.7, num_updates=13800, lr=1.27688e-05, gnorm=2.377, train_wall=23, gb_free=24.1, wall=3272
+2023-09-12 19:22:46 | INFO | train_inner | epoch 001:  13900 / 184396 loss=7.148, nll_loss=3.627, ppl=12.36, wps=6837.6, ups=4.22, wpb=1618.6, bsz=92.5, num_updates=13900, lr=1.27228e-05, gnorm=2.255, train_wall=23, gb_free=25.4, wall=3295
+2023-09-12 19:23:09 | INFO | train_inner | epoch 001:  14000 / 184396 loss=7.17, nll_loss=3.659, ppl=12.63, wps=6804.4, ups=4.24, wpb=1603.5, bsz=99, num_updates=14000, lr=1.26773e-05, gnorm=2.329, train_wall=23, gb_free=24.5, wall=3319
+2023-09-12 19:23:33 | INFO | train_inner | epoch 001:  14100 / 184396 loss=7.175, nll_loss=3.664, ppl=12.68, wps=6670.9, ups=4.26, wpb=1566.9, bsz=93.7, num_updates=14100, lr=1.26323e-05, gnorm=2.287, train_wall=23, gb_free=24.7, wall=3342
+2023-09-12 19:23:56 | INFO | train_inner | epoch 001:  14200 / 184396 loss=7.158, nll_loss=3.646, ppl=12.52, wps=6823.1, ups=4.23, wpb=1613.5, bsz=109.3, num_updates=14200, lr=1.25877e-05, gnorm=2.44, train_wall=23, gb_free=25.6, wall=3366
+2023-09-12 19:24:20 | INFO | train_inner | epoch 001:  14300 / 184396 loss=7.219, nll_loss=3.719, ppl=13.17, wps=6692, ups=4.28, wpb=1565.2, bsz=90, num_updates=14300, lr=1.25436e-05, gnorm=2.467, train_wall=23, gb_free=24.6, wall=3389
+2023-09-12 19:24:43 | INFO | train_inner | epoch 001:  14400 / 184396 loss=7.137, nll_loss=3.62, ppl=12.29, wps=6718.2, ups=4.26, wpb=1575.4, bsz=94.5, num_updates=14400, lr=1.25e-05, gnorm=2.282, train_wall=23, gb_free=26.2, wall=3413
+2023-09-12 19:25:07 | INFO | train_inner | epoch 001:  14500 / 184396 loss=7.093, nll_loss=3.564, ppl=11.83, wps=6760.4, ups=4.23, wpb=1599.1, bsz=95.2, num_updates=14500, lr=1.24568e-05, gnorm=2.418, train_wall=23, gb_free=24.4, wall=3436
+2023-09-12 19:25:30 | INFO | train_inner | epoch 001:  14600 / 184396 loss=7.178, nll_loss=3.669, ppl=12.72, wps=6672.7, ups=4.25, wpb=1569.1, bsz=90.7, num_updates=14600, lr=1.24141e-05, gnorm=2.452, train_wall=23, gb_free=26.1, wall=3460
+2023-09-12 19:25:54 | INFO | train_inner | epoch 001:  14700 / 184396 loss=7.089, nll_loss=3.552, ppl=11.73, wps=6628.8, ups=4.24, wpb=1565, bsz=81.5, num_updates=14700, lr=1.23718e-05, gnorm=2.45, train_wall=23, gb_free=25.1, wall=3484
+2023-09-12 19:26:18 | INFO | train_inner | epoch 001:  14800 / 184396 loss=7.164, nll_loss=3.654, ppl=12.59, wps=6764.4, ups=4.23, wpb=1599.2, bsz=90.6, num_updates=14800, lr=1.23299e-05, gnorm=2.379, train_wall=23, gb_free=24.6, wall=3507
+2023-09-12 19:26:41 | INFO | train_inner | epoch 001:  14900 / 184396 loss=7.183, nll_loss=3.675, ppl=12.78, wps=6700.8, ups=4.27, wpb=1569.6, bsz=95, num_updates=14900, lr=1.22885e-05, gnorm=2.392, train_wall=23, gb_free=25.1, wall=3531
+2023-09-12 19:27:05 | INFO | train_inner | epoch 001:  15000 / 184396 loss=7.163, nll_loss=3.652, ppl=12.57, wps=6753.4, ups=4.23, wpb=1596.2, bsz=93.7, num_updates=15000, lr=1.22474e-05, gnorm=2.398, train_wall=23, gb_free=24.9, wall=3554
+2023-09-12 19:27:28 | INFO | train_inner | epoch 001:  15100 / 184396 loss=7.147, nll_loss=3.629, ppl=12.37, wps=6569.9, ups=4.28, wpb=1536.8, bsz=85.2, num_updates=15100, lr=1.22068e-05, gnorm=2.527, train_wall=23, gb_free=25.5, wall=3578
+2023-09-12 19:27:51 | INFO | train_inner | epoch 001:  15200 / 184396 loss=7.085, nll_loss=3.557, ppl=11.77, wps=6639, ups=4.29, wpb=1549.2, bsz=97.6, num_updates=15200, lr=1.21666e-05, gnorm=2.901, train_wall=23, gb_free=24, wall=3601
+2023-09-12 19:28:15 | INFO | train_inner | epoch 001:  15300 / 184396 loss=7.114, nll_loss=3.597, ppl=12.1, wps=6667.5, ups=4.26, wpb=1563.8, bsz=101.2, num_updates=15300, lr=1.21268e-05, gnorm=2.42, train_wall=23, gb_free=26, wall=3624
+2023-09-12 19:28:38 | INFO | train_inner | epoch 001:  15400 / 184396 loss=7.171, nll_loss=3.658, ppl=12.62, wps=6653.1, ups=4.27, wpb=1558.4, bsz=82.4, num_updates=15400, lr=1.20873e-05, gnorm=2.766, train_wall=23, gb_free=25.2, wall=3648
+2023-09-12 19:29:02 | INFO | train_inner | epoch 001:  15500 / 184396 loss=7.167, nll_loss=3.66, ppl=12.64, wps=6752, ups=4.26, wpb=1585.2, bsz=87.8, num_updates=15500, lr=1.20483e-05, gnorm=2.339, train_wall=23, gb_free=26.4, wall=3671
+2023-09-12 19:29:25 | INFO | train_inner | epoch 001:  15600 / 184396 loss=7.085, nll_loss=3.554, ppl=11.75, wps=6773, ups=4.24, wpb=1596.3, bsz=95.1, num_updates=15600, lr=1.20096e-05, gnorm=2.178, train_wall=23, gb_free=26.4, wall=3695
+2023-09-12 19:29:49 | INFO | train_inner | epoch 001:  15700 / 184396 loss=7.134, nll_loss=3.618, ppl=12.28, wps=6812, ups=4.25, wpb=1603.6, bsz=88.9, num_updates=15700, lr=1.19713e-05, gnorm=2.293, train_wall=23, gb_free=25.2, wall=3718
+2023-09-12 19:30:12 | INFO | train_inner | epoch 001:  15800 / 184396 loss=7.166, nll_loss=3.656, ppl=12.61, wps=6854.9, ups=4.26, wpb=1610.8, bsz=89.8, num_updates=15800, lr=1.19334e-05, gnorm=2.269, train_wall=23, gb_free=25.1, wall=3742
+2023-09-12 19:30:36 | INFO | train_inner | epoch 001:  15900 / 184396 loss=7.086, nll_loss=3.555, ppl=11.75, wps=6850.2, ups=4.2, wpb=1632.8, bsz=88.7, num_updates=15900, lr=1.18958e-05, gnorm=2.219, train_wall=24, gb_free=26.4, wall=3766
+2023-09-12 19:31:00 | INFO | train_inner | epoch 001:  16000 / 184396 loss=7.111, nll_loss=3.593, ppl=12.07, wps=6744.2, ups=4.22, wpb=1597.7, bsz=95.4, num_updates=16000, lr=1.18585e-05, gnorm=2.274, train_wall=23, gb_free=24.9, wall=3790
+2023-09-12 19:31:23 | INFO | train_inner | epoch 001:  16100 / 184396 loss=7.141, nll_loss=3.632, ppl=12.4, wps=6683.4, ups=4.28, wpb=1561.9, bsz=101.5, num_updates=16100, lr=1.18217e-05, gnorm=2.248, train_wall=23, gb_free=25, wall=3813
+2023-09-12 19:31:47 | INFO | train_inner | epoch 001:  16200 / 184396 loss=7.193, nll_loss=3.69, ppl=12.9, wps=6737.6, ups=4.27, wpb=1577.1, bsz=77.2, num_updates=16200, lr=1.17851e-05, gnorm=2.367, train_wall=23, gb_free=25.4, wall=3836
+2023-09-12 19:32:10 | INFO | train_inner | epoch 001:  16300 / 184396 loss=7.111, nll_loss=3.588, ppl=12.03, wps=6600.1, ups=4.26, wpb=1549.2, bsz=78.8, num_updates=16300, lr=1.17489e-05, gnorm=2.328, train_wall=23, gb_free=24.3, wall=3860
+2023-09-12 19:32:34 | INFO | train_inner | epoch 001:  16400 / 184396 loss=7.14, nll_loss=3.627, ppl=12.35, wps=6816.8, ups=4.26, wpb=1601.7, bsz=91.1, num_updates=16400, lr=1.1713e-05, gnorm=2.322, train_wall=23, gb_free=24.4, wall=3883
+2023-09-12 19:32:57 | INFO | train_inner | epoch 001:  16500 / 184396 loss=7.153, nll_loss=3.647, ppl=12.53, wps=6719.9, ups=4.24, wpb=1586, bsz=93, num_updates=16500, lr=1.16775e-05, gnorm=2.268, train_wall=23, gb_free=24.5, wall=3907
+2023-09-12 19:33:21 | INFO | train_inner | epoch 001:  16600 / 184396 loss=7.083, nll_loss=3.558, ppl=11.78, wps=6792.8, ups=4.24, wpb=1600.3, bsz=94.8, num_updates=16600, lr=1.16423e-05, gnorm=2.185, train_wall=23, gb_free=25.2, wall=3930
+2023-09-12 19:33:44 | INFO | train_inner | epoch 001:  16700 / 184396 loss=7.138, nll_loss=3.622, ppl=12.31, wps=6857, ups=4.22, wpb=1625.8, bsz=89.8, num_updates=16700, lr=1.16073e-05, gnorm=2.373, train_wall=23, gb_free=23.1, wall=3954
+2023-09-12 19:34:08 | INFO | train_inner | epoch 001:  16800 / 184396 loss=7.075, nll_loss=3.549, ppl=11.71, wps=6874.8, ups=4.19, wpb=1641.8, bsz=97.8, num_updates=16800, lr=1.15728e-05, gnorm=2.226, train_wall=24, gb_free=26.5, wall=3978
+2023-09-12 19:34:32 | INFO | train_inner | epoch 001:  16900 / 184396 loss=7.039, nll_loss=3.502, ppl=11.33, wps=6687.3, ups=4.23, wpb=1580.6, bsz=92.1, num_updates=16900, lr=1.15385e-05, gnorm=2.21, train_wall=23, gb_free=24.9, wall=4002
+2023-09-12 19:34:56 | INFO | train_inner | epoch 001:  17000 / 184396 loss=7.119, nll_loss=3.608, ppl=12.19, wps=6835.2, ups=4.24, wpb=1611.9, bsz=95.5, num_updates=17000, lr=1.15045e-05, gnorm=2.403, train_wall=23, gb_free=26, wall=4025
+2023-09-12 19:35:19 | INFO | train_inner | epoch 001:  17100 / 184396 loss=7.097, nll_loss=3.579, ppl=11.95, wps=6836.8, ups=4.24, wpb=1611.8, bsz=92, num_updates=17100, lr=1.14708e-05, gnorm=2.33, train_wall=23, gb_free=24.8, wall=4049
+2023-09-12 19:35:43 | INFO | train_inner | epoch 001:  17200 / 184396 loss=7.109, nll_loss=3.59, ppl=12.04, wps=6668.9, ups=4.25, wpb=1568.6, bsz=90.2, num_updates=17200, lr=1.14374e-05, gnorm=2.376, train_wall=23, gb_free=25.6, wall=4072
+2023-09-12 19:36:06 | INFO | train_inner | epoch 001:  17300 / 184396 loss=7.099, nll_loss=3.578, ppl=11.95, wps=6796.6, ups=4.26, wpb=1595.6, bsz=85.7, num_updates=17300, lr=1.14043e-05, gnorm=2.293, train_wall=23, gb_free=25.9, wall=4096
+2023-09-12 19:36:30 | INFO | train_inner | epoch 001:  17400 / 184396 loss=7.094, nll_loss=3.58, ppl=11.96, wps=6719.4, ups=4.24, wpb=1586.4, bsz=104.5, num_updates=17400, lr=1.13715e-05, gnorm=2.307, train_wall=23, gb_free=24.5, wall=4119
+2023-09-12 19:36:53 | INFO | train_inner | epoch 001:  17500 / 184396 loss=7.058, nll_loss=3.529, ppl=11.54, wps=6792.2, ups=4.25, wpb=1597, bsz=99.5, num_updates=17500, lr=1.13389e-05, gnorm=2.27, train_wall=23, gb_free=24.2, wall=4143
+2023-09-12 19:37:17 | INFO | train_inner | epoch 001:  17600 / 184396 loss=7.094, nll_loss=3.577, ppl=11.93, wps=6842.2, ups=4.25, wpb=1611.1, bsz=92.7, num_updates=17600, lr=1.13067e-05, gnorm=2.173, train_wall=23, gb_free=26, wall=4166
+2023-09-12 19:37:40 | INFO | train_inner | epoch 001:  17700 / 184396 loss=7.067, nll_loss=3.541, ppl=11.64, wps=6701.3, ups=4.24, wpb=1580.1, bsz=86.2, num_updates=17700, lr=1.12747e-05, gnorm=2.299, train_wall=23, gb_free=24.6, wall=4190
+2023-09-12 19:38:04 | INFO | train_inner | epoch 001:  17800 / 184396 loss=7.148, nll_loss=3.644, ppl=12.5, wps=6825.7, ups=4.24, wpb=1610, bsz=94.2, num_updates=17800, lr=1.1243e-05, gnorm=2.348, train_wall=23, gb_free=26.4, wall=4214
+2023-09-12 19:38:27 | INFO | train_inner | epoch 001:  17900 / 184396 loss=7.055, nll_loss=3.53, ppl=11.55, wps=6585, ups=4.29, wpb=1536.5, bsz=91.5, num_updates=17900, lr=1.12115e-05, gnorm=2.363, train_wall=23, gb_free=25.3, wall=4237
+2023-09-12 19:38:51 | INFO | train_inner | epoch 001:  18000 / 184396 loss=7.076, nll_loss=3.554, ppl=11.74, wps=6748.7, ups=4.27, wpb=1581.3, bsz=95.3, num_updates=18000, lr=1.11803e-05, gnorm=2.28, train_wall=23, gb_free=25.1, wall=4260
+2023-09-12 19:39:14 | INFO | train_inner | epoch 001:  18100 / 184396 loss=7.071, nll_loss=3.55, ppl=11.71, wps=6742.9, ups=4.24, wpb=1588.5, bsz=91.4, num_updates=18100, lr=1.11494e-05, gnorm=2.302, train_wall=23, gb_free=25.7, wall=4284
+2023-09-12 19:39:38 | INFO | train_inner | epoch 001:  18200 / 184396 loss=7.082, nll_loss=3.561, ppl=11.8, wps=6733.2, ups=4.26, wpb=1580.9, bsz=86.1, num_updates=18200, lr=1.11187e-05, gnorm=2.318, train_wall=23, gb_free=25.2, wall=4307
+2023-09-12 19:40:01 | INFO | train_inner | epoch 001:  18300 / 184396 loss=7.088, nll_loss=3.57, ppl=11.88, wps=6791.9, ups=4.24, wpb=1602, bsz=102.3, num_updates=18300, lr=1.10883e-05, gnorm=2.269, train_wall=23, gb_free=24.7, wall=4331
+2023-09-12 19:40:25 | INFO | train_inner | epoch 001:  18400 / 184396 loss=7.102, nll_loss=3.59, ppl=12.04, wps=6741.6, ups=4.25, wpb=1585.3, bsz=97.2, num_updates=18400, lr=1.10581e-05, gnorm=2.264, train_wall=23, gb_free=26.3, wall=4355
+2023-09-12 19:40:48 | INFO | train_inner | epoch 001:  18500 / 184396 loss=7.083, nll_loss=3.56, ppl=11.79, wps=6712.3, ups=4.27, wpb=1572.4, bsz=88.2, num_updates=18500, lr=1.10282e-05, gnorm=2.258, train_wall=23, gb_free=24.5, wall=4378
+2023-09-12 19:41:12 | INFO | train_inner | epoch 001:  18600 / 184396 loss=7.111, nll_loss=3.601, ppl=12.14, wps=6813.4, ups=4.22, wpb=1614.9, bsz=99.7, num_updates=18600, lr=1.09985e-05, gnorm=2.261, train_wall=23, gb_free=24.8, wall=4402
+2023-09-12 19:41:36 | INFO | train_inner | epoch 001:  18700 / 184396 loss=7.075, nll_loss=3.555, ppl=11.75, wps=6837.6, ups=4.22, wpb=1621.1, bsz=92.3, num_updates=18700, lr=1.09691e-05, gnorm=2.239, train_wall=23, gb_free=24.4, wall=4425
+2023-09-12 19:41:59 | INFO | train_inner | epoch 001:  18800 / 184396 loss=7.061, nll_loss=3.536, ppl=11.6, wps=6819.5, ups=4.24, wpb=1609.4, bsz=88.1, num_updates=18800, lr=1.09399e-05, gnorm=2.232, train_wall=23, gb_free=26.3, wall=4449
+2023-09-12 19:42:23 | INFO | train_inner | epoch 001:  18900 / 184396 loss=7.043, nll_loss=3.515, ppl=11.43, wps=6746.7, ups=4.27, wpb=1581.7, bsz=96.2, num_updates=18900, lr=1.09109e-05, gnorm=2.283, train_wall=23, gb_free=24.5, wall=4472
+2023-09-12 19:42:46 | INFO | train_inner | epoch 001:  19000 / 184396 loss=7.085, nll_loss=3.567, ppl=11.85, wps=6704.6, ups=4.25, wpb=1578.7, bsz=88.2, num_updates=19000, lr=1.08821e-05, gnorm=2.308, train_wall=23, gb_free=26.4, wall=4496
+2023-09-12 19:43:10 | INFO | train_inner | epoch 001:  19100 / 184396 loss=7.08, nll_loss=3.561, ppl=11.81, wps=6783.3, ups=4.24, wpb=1601, bsz=97.8, num_updates=19100, lr=1.08536e-05, gnorm=2.224, train_wall=23, gb_free=26, wall=4520
+2023-09-12 19:43:33 | INFO | train_inner | epoch 001:  19200 / 184396 loss=7.013, nll_loss=3.478, ppl=11.15, wps=6729, ups=4.24, wpb=1585.5, bsz=93.7, num_updates=19200, lr=1.08253e-05, gnorm=2.27, train_wall=23, gb_free=24.3, wall=4543
+2023-09-12 19:43:57 | INFO | train_inner | epoch 001:  19300 / 184396 loss=7.113, nll_loss=3.604, ppl=12.16, wps=6712.8, ups=4.28, wpb=1569.4, bsz=84.3, num_updates=19300, lr=1.07972e-05, gnorm=2.395, train_wall=23, gb_free=25.2, wall=4567
+2023-09-12 19:44:21 | INFO | train_inner | epoch 001:  19400 / 184396 loss=7.08, nll_loss=3.562, ppl=11.81, wps=6801.7, ups=4.23, wpb=1608.8, bsz=94.5, num_updates=19400, lr=1.07694e-05, gnorm=2.34, train_wall=23, gb_free=25.6, wall=4590
+2023-09-12 19:44:44 | INFO | train_inner | epoch 001:  19500 / 184396 loss=7.049, nll_loss=3.522, ppl=11.49, wps=6798.5, ups=4.21, wpb=1613.4, bsz=86.6, num_updates=19500, lr=1.07417e-05, gnorm=2.273, train_wall=23, gb_free=25, wall=4614
+2023-09-12 19:45:08 | INFO | train_inner | epoch 001:  19600 / 184396 loss=7.063, nll_loss=3.536, ppl=11.6, wps=6747.1, ups=4.24, wpb=1591.1, bsz=84, num_updates=19600, lr=1.07143e-05, gnorm=2.312, train_wall=23, gb_free=25.3, wall=4637
+2023-09-12 19:45:31 | INFO | train_inner | epoch 001:  19700 / 184396 loss=7.049, nll_loss=3.523, ppl=11.49, wps=6703.6, ups=4.28, wpb=1564.5, bsz=90, num_updates=19700, lr=1.06871e-05, gnorm=2.344, train_wall=23, gb_free=25.6, wall=4661
+2023-09-12 19:45:55 | INFO | train_inner | epoch 001:  19800 / 184396 loss=7.023, nll_loss=3.496, ppl=11.28, wps=6764.6, ups=4.25, wpb=1590.9, bsz=103.1, num_updates=19800, lr=1.066e-05, gnorm=2.3, train_wall=23, gb_free=25.5, wall=4684
+2023-09-12 19:46:18 | INFO | train_inner | epoch 001:  19900 / 184396 loss=7.072, nll_loss=3.555, ppl=11.76, wps=6789.7, ups=4.21, wpb=1614.2, bsz=94, num_updates=19900, lr=1.06332e-05, gnorm=2.24, train_wall=23, gb_free=25.4, wall=4708
+2023-09-12 19:46:42 | INFO | train_inner | epoch 001:  20000 / 184396 loss=6.997, nll_loss=3.461, ppl=11.01, wps=6792.9, ups=4.26, wpb=1595.4, bsz=103.8, num_updates=20000, lr=1.06066e-05, gnorm=2.168, train_wall=23, gb_free=26, wall=4732
+2023-09-12 19:47:05 | INFO | train_inner | epoch 001:  20100 / 184396 loss=7.072, nll_loss=3.556, ppl=11.76, wps=6760.4, ups=4.25, wpb=1591.7, bsz=91.7, num_updates=20100, lr=1.05802e-05, gnorm=2.229, train_wall=23, gb_free=23.9, wall=4755
+2023-09-12 19:47:29 | INFO | train_inner | epoch 001:  20200 / 184396 loss=7.07, nll_loss=3.549, ppl=11.7, wps=6814.4, ups=4.26, wpb=1600.7, bsz=89.7, num_updates=20200, lr=1.0554e-05, gnorm=2.19, train_wall=23, gb_free=26.1, wall=4779
+2023-09-12 19:47:52 | INFO | train_inner | epoch 001:  20300 / 184396 loss=7.011, nll_loss=3.476, ppl=11.13, wps=6744.5, ups=4.27, wpb=1577.7, bsz=85.1, num_updates=20300, lr=1.05279e-05, gnorm=2.238, train_wall=23, gb_free=24.5, wall=4802
+2023-09-12 19:48:16 | INFO | train_inner | epoch 001:  20400 / 184396 loss=7.017, nll_loss=3.482, ppl=11.17, wps=6726.9, ups=4.24, wpb=1584.7, bsz=87.3, num_updates=20400, lr=1.05021e-05, gnorm=2.255, train_wall=23, gb_free=26, wall=4826
+2023-09-12 19:48:40 | INFO | train_inner | epoch 001:  20500 / 184396 loss=7.05, nll_loss=3.525, ppl=11.51, wps=6768.7, ups=4.24, wpb=1595.6, bsz=83, num_updates=20500, lr=1.04765e-05, gnorm=2.295, train_wall=23, gb_free=25.1, wall=4849
+2023-09-12 19:49:03 | INFO | train_inner | epoch 001:  20600 / 184396 loss=7.084, nll_loss=3.563, ppl=11.82, wps=6633.7, ups=4.29, wpb=1544.8, bsz=75.9, num_updates=20600, lr=1.0451e-05, gnorm=2.367, train_wall=23, gb_free=25, wall=4872
+2023-09-12 19:49:26 | INFO | train_inner | epoch 001:  20700 / 184396 loss=7.055, nll_loss=3.536, ppl=11.6, wps=6747.4, ups=4.27, wpb=1581.4, bsz=95.5, num_updates=20700, lr=1.04257e-05, gnorm=2.263, train_wall=23, gb_free=24.6, wall=4896
+2023-09-12 19:49:50 | INFO | train_inner | epoch 001:  20800 / 184396 loss=7.038, nll_loss=3.511, ppl=11.4, wps=6785.1, ups=4.2, wpb=1617, bsz=93.3, num_updates=20800, lr=1.04006e-05, gnorm=2.153, train_wall=23, gb_free=25.2, wall=4920
+2023-09-12 19:50:14 | INFO | train_inner | epoch 001:  20900 / 184396 loss=7.091, nll_loss=3.579, ppl=11.95, wps=6758.3, ups=4.24, wpb=1595.7, bsz=90.3, num_updates=20900, lr=1.03757e-05, gnorm=2.281, train_wall=23, gb_free=24.1, wall=4943
+2023-09-12 19:50:37 | INFO | train_inner | epoch 001:  21000 / 184396 loss=7.06, nll_loss=3.54, ppl=11.63, wps=6677.7, ups=4.25, wpb=1570.5, bsz=91.9, num_updates=21000, lr=1.0351e-05, gnorm=2.215, train_wall=23, gb_free=25, wall=4967
+2023-09-12 19:51:01 | INFO | train_inner | epoch 001:  21100 / 184396 loss=7.032, nll_loss=3.503, ppl=11.34, wps=6792.8, ups=4.25, wpb=1600, bsz=85.8, num_updates=21100, lr=1.03264e-05, gnorm=2.375, train_wall=23, gb_free=24.3, wall=4990
+2023-09-12 19:51:24 | INFO | train_inner | epoch 001:  21200 / 184396 loss=7.007, nll_loss=3.476, ppl=11.13, wps=6658.4, ups=4.28, wpb=1555.8, bsz=95.1, num_updates=21200, lr=1.0302e-05, gnorm=2.305, train_wall=23, gb_free=25.1, wall=5014
+2023-09-12 19:51:48 | INFO | train_inner | epoch 001:  21300 / 184396 loss=7.042, nll_loss=3.519, ppl=11.46, wps=6751.3, ups=4.24, wpb=1592.3, bsz=93.7, num_updates=21300, lr=1.02778e-05, gnorm=2.212, train_wall=23, gb_free=25.3, wall=5037
+2023-09-12 19:52:11 | INFO | train_inner | epoch 001:  21400 / 184396 loss=7.045, nll_loss=3.525, ppl=11.51, wps=6842.7, ups=4.24, wpb=1615.3, bsz=98.5, num_updates=21400, lr=1.02538e-05, gnorm=2.199, train_wall=23, gb_free=24.3, wall=5061
+2023-09-12 19:52:35 | INFO | train_inner | epoch 001:  21500 / 184396 loss=7.051, nll_loss=3.532, ppl=11.57, wps=6737.7, ups=4.28, wpb=1574.7, bsz=90.9, num_updates=21500, lr=1.02299e-05, gnorm=2.227, train_wall=23, gb_free=24.1, wall=5084
+2023-09-12 19:52:58 | INFO | train_inner | epoch 001:  21600 / 184396 loss=7.007, nll_loss=3.479, ppl=11.15, wps=6813.3, ups=4.25, wpb=1604.2, bsz=99.5, num_updates=21600, lr=1.02062e-05, gnorm=2.15, train_wall=23, gb_free=24.4, wall=5108
+2023-09-12 19:53:22 | INFO | train_inner | epoch 001:  21700 / 184396 loss=7.042, nll_loss=3.517, ppl=11.45, wps=6721.2, ups=4.27, wpb=1575.5, bsz=87, num_updates=21700, lr=1.01827e-05, gnorm=2.253, train_wall=23, gb_free=25.9, wall=5131
+2023-09-12 19:53:45 | INFO | train_inner | epoch 001:  21800 / 184396 loss=7.02, nll_loss=3.488, ppl=11.22, wps=6829.8, ups=4.25, wpb=1607.7, bsz=84.4, num_updates=21800, lr=1.01593e-05, gnorm=2.226, train_wall=23, gb_free=26.1, wall=5155
+2023-09-12 19:54:09 | INFO | train_inner | epoch 001:  21900 / 184396 loss=7.092, nll_loss=3.587, ppl=12.02, wps=6663.1, ups=4.26, wpb=1562.7, bsz=94.3, num_updates=21900, lr=1.01361e-05, gnorm=2.248, train_wall=23, gb_free=25.7, wall=5178
+2023-09-12 19:54:32 | INFO | train_inner | epoch 001:  22000 / 184396 loss=6.999, nll_loss=3.463, ppl=11.03, wps=6620.5, ups=4.29, wpb=1544, bsz=87.2, num_updates=22000, lr=1.0113e-05, gnorm=2.337, train_wall=23, gb_free=25, wall=5202
+2023-09-12 19:54:56 | INFO | train_inner | epoch 001:  22100 / 184396 loss=7.058, nll_loss=3.542, ppl=11.65, wps=6775.6, ups=4.24, wpb=1597.7, bsz=97.4, num_updates=22100, lr=1.00901e-05, gnorm=2.264, train_wall=23, gb_free=24.6, wall=5225
+2023-09-12 19:55:19 | INFO | train_inner | epoch 001:  22200 / 184396 loss=7.075, nll_loss=3.568, ppl=11.86, wps=6752.8, ups=4.24, wpb=1593.5, bsz=98.2, num_updates=22200, lr=1.00673e-05, gnorm=2.33, train_wall=23, gb_free=24.4, wall=5249
+2023-09-12 19:55:43 | INFO | train_inner | epoch 001:  22300 / 184396 loss=7.124, nll_loss=3.629, ppl=12.37, wps=6670.4, ups=4.26, wpb=1564.5, bsz=97.2, num_updates=22300, lr=1.00447e-05, gnorm=2.258, train_wall=23, gb_free=24.5, wall=5272
+2023-09-12 19:56:06 | INFO | train_inner | epoch 001:  22400 / 184396 loss=7.024, nll_loss=3.503, ppl=11.34, wps=6799, ups=4.24, wpb=1604.9, bsz=100.8, num_updates=22400, lr=1.00223e-05, gnorm=2.125, train_wall=23, gb_free=24.1, wall=5296
+2023-09-12 19:56:30 | INFO | train_inner | epoch 001:  22500 / 184396 loss=6.999, nll_loss=3.466, ppl=11.05, wps=6691.6, ups=4.27, wpb=1568.3, bsz=90.2, num_updates=22500, lr=1e-05, gnorm=2.199, train_wall=23, gb_free=25.1, wall=5319
+2023-09-12 19:56:53 | INFO | train_inner | epoch 001:  22600 / 184396 loss=7.089, nll_loss=3.58, ppl=11.96, wps=6645.5, ups=4.25, wpb=1564.9, bsz=86.4, num_updates=22600, lr=9.97785e-06, gnorm=2.323, train_wall=23, gb_free=24.8, wall=5343
+2023-09-12 19:57:17 | INFO | train_inner | epoch 001:  22700 / 184396 loss=7.013, nll_loss=3.484, ppl=11.19, wps=6838.3, ups=4.23, wpb=1615.7, bsz=91.8, num_updates=22700, lr=9.95585e-06, gnorm=2.194, train_wall=23, gb_free=25.5, wall=5366
+2023-09-12 19:57:41 | INFO | train_inner | epoch 001:  22800 / 184396 loss=7.058, nll_loss=3.548, ppl=11.69, wps=6844.8, ups=4.22, wpb=1620.3, bsz=102.2, num_updates=22800, lr=9.93399e-06, gnorm=2.095, train_wall=23, gb_free=24.1, wall=5390
+2023-09-12 19:58:04 | INFO | train_inner | epoch 001:  22900 / 184396 loss=7.08, nll_loss=3.573, ppl=11.9, wps=6763.1, ups=4.27, wpb=1584.4, bsz=92.9, num_updates=22900, lr=9.91228e-06, gnorm=2.216, train_wall=23, gb_free=25, wall=5414
+2023-09-12 19:58:27 | INFO | train_inner | epoch 001:  23000 / 184396 loss=7.017, nll_loss=3.492, ppl=11.25, wps=6701.6, ups=4.26, wpb=1571.9, bsz=92.2, num_updates=23000, lr=9.89071e-06, gnorm=2.205, train_wall=23, gb_free=24.6, wall=5437
+2023-09-12 19:58:51 | INFO | train_inner | epoch 001:  23100 / 184396 loss=7.085, nll_loss=3.577, ppl=11.93, wps=6698.2, ups=4.27, wpb=1569.1, bsz=91.9, num_updates=23100, lr=9.86928e-06, gnorm=2.208, train_wall=23, gb_free=24.3, wall=5460
+2023-09-12 19:59:14 | INFO | train_inner | epoch 001:  23200 / 184396 loss=7.018, nll_loss=3.49, ppl=11.23, wps=6685.5, ups=4.23, wpb=1579.1, bsz=86.9, num_updates=23200, lr=9.84798e-06, gnorm=2.186, train_wall=23, gb_free=24.8, wall=5484
+2023-09-12 19:59:38 | INFO | train_inner | epoch 001:  23300 / 184396 loss=7.03, nll_loss=3.511, ppl=11.4, wps=6651.1, ups=4.28, wpb=1554.2, bsz=89.7, num_updates=23300, lr=9.82683e-06, gnorm=2.286, train_wall=23, gb_free=24.6, wall=5507
+2023-09-12 20:00:01 | INFO | train_inner | epoch 001:  23400 / 184396 loss=7.012, nll_loss=3.487, ppl=11.21, wps=6700.8, ups=4.26, wpb=1571.2, bsz=96.6, num_updates=23400, lr=9.80581e-06, gnorm=2.196, train_wall=23, gb_free=24.3, wall=5531
+2023-09-12 20:00:25 | INFO | train_inner | epoch 001:  23500 / 184396 loss=7.033, nll_loss=3.512, ppl=11.4, wps=6709.2, ups=4.26, wpb=1576.7, bsz=89, num_updates=23500, lr=9.78492e-06, gnorm=2.193, train_wall=23, gb_free=26.1, wall=5554
+2023-09-12 20:00:48 | INFO | train_inner | epoch 001:  23600 / 184396 loss=6.98, nll_loss=3.447, ppl=10.9, wps=6770.9, ups=4.26, wpb=1588.9, bsz=96.8, num_updates=23600, lr=9.76417e-06, gnorm=2.163, train_wall=23, gb_free=26.4, wall=5578
+2023-09-12 20:01:12 | INFO | train_inner | epoch 001:  23700 / 184396 loss=7.022, nll_loss=3.498, ppl=11.3, wps=6630.2, ups=4.24, wpb=1562.9, bsz=93.4, num_updates=23700, lr=9.74355e-06, gnorm=2.256, train_wall=23, gb_free=24.5, wall=5601
+2023-09-12 20:01:35 | INFO | train_inner | epoch 001:  23800 / 184396 loss=7.025, nll_loss=3.501, ppl=11.32, wps=6800.2, ups=4.25, wpb=1598.3, bsz=89.1, num_updates=23800, lr=9.72306e-06, gnorm=2.171, train_wall=23, gb_free=26.2, wall=5625
+2023-09-12 20:01:59 | INFO | train_inner | epoch 001:  23900 / 184396 loss=7.002, nll_loss=3.474, ppl=11.11, wps=6759.6, ups=4.26, wpb=1587.9, bsz=89.8, num_updates=23900, lr=9.70269e-06, gnorm=2.223, train_wall=23, gb_free=26.2, wall=5648
+2023-09-12 20:02:22 | INFO | train_inner | epoch 001:  24000 / 184396 loss=7.066, nll_loss=3.559, ppl=11.78, wps=6785.2, ups=4.24, wpb=1599.8, bsz=93.4, num_updates=24000, lr=9.68246e-06, gnorm=2.293, train_wall=23, gb_free=24.5, wall=5672
+2023-09-12 20:02:46 | INFO | train_inner | epoch 001:  24100 / 184396 loss=6.969, nll_loss=3.435, ppl=10.81, wps=6649.8, ups=4.26, wpb=1560, bsz=94.4, num_updates=24100, lr=9.66235e-06, gnorm=2.227, train_wall=23, gb_free=25.1, wall=5695
+2023-09-12 20:03:09 | INFO | train_inner | epoch 001:  24200 / 184396 loss=7.069, nll_loss=3.563, ppl=11.82, wps=6782.8, ups=4.26, wpb=1592.5, bsz=97.4, num_updates=24200, lr=9.64237e-06, gnorm=2.262, train_wall=23, gb_free=24.5, wall=5719
+2023-09-12 20:03:33 | INFO | train_inner | epoch 001:  24300 / 184396 loss=6.965, nll_loss=3.437, ppl=10.83, wps=6776.4, ups=4.25, wpb=1593.6, bsz=113.6, num_updates=24300, lr=9.6225e-06, gnorm=2.092, train_wall=23, gb_free=26.2, wall=5742
+2023-09-12 20:03:57 | INFO | train_inner | epoch 001:  24400 / 184396 loss=6.977, nll_loss=3.447, ppl=10.9, wps=6868, ups=4.21, wpb=1630.1, bsz=101.1, num_updates=24400, lr=9.60277e-06, gnorm=2.126, train_wall=23, gb_free=25.2, wall=5766
+2023-09-12 20:04:20 | INFO | train_inner | epoch 001:  24500 / 184396 loss=7.005, nll_loss=3.481, ppl=11.17, wps=6843.2, ups=4.24, wpb=1613.9, bsz=98.8, num_updates=24500, lr=9.58315e-06, gnorm=2.089, train_wall=23, gb_free=24.3, wall=5790
+2023-09-12 20:04:44 | INFO | train_inner | epoch 001:  24600 / 184396 loss=7.007, nll_loss=3.484, ppl=11.19, wps=6779.3, ups=4.23, wpb=1602.1, bsz=97.5, num_updates=24600, lr=9.56365e-06, gnorm=2.207, train_wall=23, gb_free=24, wall=5813
+2023-09-12 20:05:07 | INFO | train_inner | epoch 001:  24700 / 184396 loss=7.02, nll_loss=3.499, ppl=11.31, wps=6735.9, ups=4.26, wpb=1581.3, bsz=96.8, num_updates=24700, lr=9.54427e-06, gnorm=2.171, train_wall=23, gb_free=24.6, wall=5837
+2023-09-12 20:05:31 | INFO | train_inner | epoch 001:  24800 / 184396 loss=7.066, nll_loss=3.556, ppl=11.76, wps=6609.2, ups=4.29, wpb=1540, bsz=78.6, num_updates=24800, lr=9.52501e-06, gnorm=2.257, train_wall=23, gb_free=25.3, wall=5860
+2023-09-12 20:05:54 | INFO | train_inner | epoch 001:  24900 / 184396 loss=7.018, nll_loss=3.499, ppl=11.31, wps=6687, ups=4.25, wpb=1573.6, bsz=95.9, num_updates=24900, lr=9.50586e-06, gnorm=2.511, train_wall=23, gb_free=24.9, wall=5884
+2023-09-12 20:06:18 | INFO | train_inner | epoch 001:  25000 / 184396 loss=7.009, nll_loss=3.49, ppl=11.24, wps=6829.1, ups=4.22, wpb=1620.1, bsz=99.8, num_updates=25000, lr=9.48683e-06, gnorm=2.115, train_wall=23, gb_free=24.5, wall=5907
+2023-09-12 20:06:42 | INFO | train_inner | epoch 001:  25100 / 184396 loss=6.989, nll_loss=3.462, ppl=11.02, wps=6908, ups=4.21, wpb=1641.6, bsz=96.5, num_updates=25100, lr=9.46792e-06, gnorm=2.21, train_wall=23, gb_free=24.9, wall=5931
+2023-09-12 20:07:05 | INFO | train_inner | epoch 001:  25200 / 184396 loss=7.022, nll_loss=3.5, ppl=11.32, wps=6814.5, ups=4.25, wpb=1603.3, bsz=87.6, num_updates=25200, lr=9.44911e-06, gnorm=2.213, train_wall=23, gb_free=25.5, wall=5955
+2023-09-12 20:07:29 | INFO | train_inner | epoch 001:  25300 / 184396 loss=6.997, nll_loss=3.475, ppl=11.12, wps=6669.9, ups=4.25, wpb=1569.7, bsz=96.5, num_updates=25300, lr=9.43042e-06, gnorm=2.166, train_wall=23, gb_free=25.6, wall=5978
+2023-09-12 20:07:52 | INFO | train_inner | epoch 001:  25400 / 184396 loss=7.027, nll_loss=3.509, ppl=11.39, wps=6789.5, ups=4.26, wpb=1595.6, bsz=93.2, num_updates=25400, lr=9.41184e-06, gnorm=2.174, train_wall=23, gb_free=25.1, wall=6002
+2023-09-12 20:08:16 | INFO | train_inner | epoch 001:  25500 / 184396 loss=6.973, nll_loss=3.441, ppl=10.86, wps=6656.4, ups=4.27, wpb=1560.5, bsz=86.4, num_updates=25500, lr=9.39336e-06, gnorm=2.256, train_wall=23, gb_free=24, wall=6025
+2023-09-12 20:08:39 | INFO | train_inner | epoch 001:  25600 / 184396 loss=7.018, nll_loss=3.497, ppl=11.29, wps=6806.1, ups=4.27, wpb=1592.3, bsz=86, num_updates=25600, lr=9.375e-06, gnorm=2.188, train_wall=23, gb_free=26.2, wall=6049
+2023-09-12 20:09:03 | INFO | train_inner | epoch 001:  25700 / 184396 loss=6.987, nll_loss=3.46, ppl=11, wps=6808.6, ups=4.24, wpb=1604.7, bsz=98.8, num_updates=25700, lr=9.35674e-06, gnorm=2.116, train_wall=23, gb_free=24.7, wall=6072
+2023-09-12 20:09:26 | INFO | train_inner | epoch 001:  25800 / 184396 loss=6.98, nll_loss=3.449, ppl=10.92, wps=6769.7, ups=4.24, wpb=1595.9, bsz=82.1, num_updates=25800, lr=9.33859e-06, gnorm=2.17, train_wall=23, gb_free=25, wall=6096
+2023-09-12 20:09:50 | INFO | train_inner | epoch 001:  25900 / 184396 loss=7.016, nll_loss=3.498, ppl=11.3, wps=6640.7, ups=4.26, wpb=1558.3, bsz=97.1, num_updates=25900, lr=9.32055e-06, gnorm=2.2, train_wall=23, gb_free=24.9, wall=6119
+2023-09-12 20:10:13 | INFO | train_inner | epoch 001:  26000 / 184396 loss=6.999, nll_loss=3.475, ppl=11.12, wps=6783.2, ups=4.25, wpb=1596.1, bsz=91.5, num_updates=26000, lr=9.30261e-06, gnorm=2.124, train_wall=23, gb_free=26.3, wall=6143
+2023-09-12 20:10:37 | INFO | train_inner | epoch 001:  26100 / 184396 loss=6.933, nll_loss=3.391, ppl=10.49, wps=6822, ups=4.25, wpb=1603.4, bsz=93.3, num_updates=26100, lr=9.28477e-06, gnorm=2.182, train_wall=23, gb_free=24, wall=6166
+2023-09-12 20:11:00 | INFO | train_inner | epoch 001:  26200 / 184396 loss=7.027, nll_loss=3.51, ppl=11.39, wps=6678.9, ups=4.25, wpb=1571.8, bsz=88.8, num_updates=26200, lr=9.26703e-06, gnorm=2.492, train_wall=23, gb_free=25.4, wall=6190
+2023-09-12 20:11:24 | INFO | train_inner | epoch 001:  26300 / 184396 loss=7.021, nll_loss=3.503, ppl=11.34, wps=6735.3, ups=4.28, wpb=1574.5, bsz=92.9, num_updates=26300, lr=9.2494e-06, gnorm=2.181, train_wall=23, gb_free=24.2, wall=6213
+2023-09-12 20:11:47 | INFO | train_inner | epoch 001:  26400 / 184396 loss=7.013, nll_loss=3.492, ppl=11.25, wps=6805, ups=4.22, wpb=1611.8, bsz=89.1, num_updates=26400, lr=9.23186e-06, gnorm=2.145, train_wall=23, gb_free=24.2, wall=6237
+2023-09-12 20:12:11 | INFO | train_inner | epoch 001:  26500 / 184396 loss=7.025, nll_loss=3.509, ppl=11.39, wps=6655.3, ups=4.27, wpb=1559.4, bsz=90.9, num_updates=26500, lr=9.21443e-06, gnorm=2.333, train_wall=23, gb_free=24.3, wall=6260
+2023-09-12 20:12:34 | INFO | train_inner | epoch 001:  26600 / 184396 loss=7.002, nll_loss=3.484, ppl=11.19, wps=6777.6, ups=4.27, wpb=1587.5, bsz=100.8, num_updates=26600, lr=9.19709e-06, gnorm=2.099, train_wall=23, gb_free=24.5, wall=6284
+2023-09-12 20:12:58 | INFO | train_inner | epoch 001:  26700 / 184396 loss=7.016, nll_loss=3.498, ppl=11.3, wps=6733, ups=4.25, wpb=1584.7, bsz=94.4, num_updates=26700, lr=9.17985e-06, gnorm=2.203, train_wall=23, gb_free=25.5, wall=6307
+2023-09-12 20:13:21 | INFO | train_inner | epoch 001:  26800 / 184396 loss=7.001, nll_loss=3.481, ppl=11.17, wps=6904.8, ups=4.24, wpb=1628.8, bsz=98.3, num_updates=26800, lr=9.16271e-06, gnorm=2.117, train_wall=23, gb_free=24.7, wall=6331
+2023-09-12 20:13:45 | INFO | train_inner | epoch 001:  26900 / 184396 loss=6.982, nll_loss=3.456, ppl=10.97, wps=6758.4, ups=4.25, wpb=1589.2, bsz=91.8, num_updates=26900, lr=9.14566e-06, gnorm=2.194, train_wall=23, gb_free=24.2, wall=6354
+2023-09-12 20:14:08 | INFO | train_inner | epoch 001:  27000 / 184396 loss=7.06, nll_loss=3.555, ppl=11.76, wps=6718.8, ups=4.28, wpb=1568.5, bsz=88.4, num_updates=27000, lr=9.12871e-06, gnorm=2.322, train_wall=23, gb_free=26.1, wall=6378
+2023-09-12 20:14:32 | INFO | train_inner | epoch 001:  27100 / 184396 loss=6.931, nll_loss=3.39, ppl=10.48, wps=6712.1, ups=4.25, wpb=1578.8, bsz=93.4, num_updates=27100, lr=9.11185e-06, gnorm=2.101, train_wall=23, gb_free=25.2, wall=6401
+2023-09-12 20:14:55 | INFO | train_inner | epoch 001:  27200 / 184396 loss=6.99, nll_loss=3.466, ppl=11.05, wps=6876, ups=4.23, wpb=1625.9, bsz=99.5, num_updates=27200, lr=9.09509e-06, gnorm=2.133, train_wall=23, gb_free=25.5, wall=6425
+2023-09-12 20:15:19 | INFO | train_inner | epoch 001:  27300 / 184396 loss=6.992, nll_loss=3.472, ppl=11.1, wps=6711.8, ups=4.26, wpb=1574.2, bsz=92.2, num_updates=27300, lr=9.07841e-06, gnorm=2.155, train_wall=23, gb_free=26.4, wall=6448
+2023-09-12 20:15:42 | INFO | train_inner | epoch 001:  27400 / 184396 loss=6.945, nll_loss=3.412, ppl=10.64, wps=6802.9, ups=4.26, wpb=1597.3, bsz=96.2, num_updates=27400, lr=9.06183e-06, gnorm=2.177, train_wall=23, gb_free=25.8, wall=6472
+2023-09-12 20:16:06 | INFO | train_inner | epoch 001:  27500 / 184396 loss=7.043, nll_loss=3.536, ppl=11.6, wps=6767, ups=4.29, wpb=1578.7, bsz=96.1, num_updates=27500, lr=9.04534e-06, gnorm=2.134, train_wall=23, gb_free=24.3, wall=6495
+2023-09-12 20:16:29 | INFO | train_inner | epoch 001:  27600 / 184396 loss=7.019, nll_loss=3.507, ppl=11.37, wps=6819.2, ups=4.22, wpb=1615, bsz=98.6, num_updates=27600, lr=9.02894e-06, gnorm=2.185, train_wall=23, gb_free=24.6, wall=6519
+2023-09-12 20:16:53 | INFO | train_inner | epoch 001:  27700 / 184396 loss=6.965, nll_loss=3.438, ppl=10.84, wps=6779.9, ups=4.23, wpb=1601.9, bsz=97.7, num_updates=27700, lr=9.01263e-06, gnorm=2.145, train_wall=23, gb_free=24.2, wall=6542
+2023-09-12 20:17:16 | INFO | train_inner | epoch 001:  27800 / 184396 loss=7.027, nll_loss=3.51, ppl=11.39, wps=6638.2, ups=4.25, wpb=1561.8, bsz=85.3, num_updates=27800, lr=8.9964e-06, gnorm=2.197, train_wall=23, gb_free=24.7, wall=6566
+2023-09-12 20:17:40 | INFO | train_inner | epoch 001:  27900 / 184396 loss=6.958, nll_loss=3.434, ppl=10.8, wps=6743, ups=4.25, wpb=1588, bsz=101.1, num_updates=27900, lr=8.98027e-06, gnorm=2.152, train_wall=23, gb_free=26.6, wall=6590
+2023-09-12 20:18:04 | INFO | train_inner | epoch 001:  28000 / 184396 loss=6.959, nll_loss=3.434, ppl=10.81, wps=6835.3, ups=4.22, wpb=1621.3, bsz=104.6, num_updates=28000, lr=8.96421e-06, gnorm=2.062, train_wall=23, gb_free=23.2, wall=6613
+2023-09-12 20:18:27 | INFO | train_inner | epoch 001:  28100 / 184396 loss=6.982, nll_loss=3.459, ppl=10.99, wps=6730.7, ups=4.27, wpb=1576.8, bsz=95.7, num_updates=28100, lr=8.94825e-06, gnorm=2.195, train_wall=23, gb_free=25.6, wall=6637
+2023-09-12 20:18:50 | INFO | train_inner | epoch 001:  28200 / 184396 loss=7.066, nll_loss=3.565, ppl=11.83, wps=6685.7, ups=4.28, wpb=1563.8, bsz=85, num_updates=28200, lr=8.93237e-06, gnorm=2.29, train_wall=23, gb_free=25.1, wall=6660
+2023-09-12 20:19:14 | INFO | train_inner | epoch 001:  28300 / 184396 loss=6.964, nll_loss=3.437, ppl=10.83, wps=6749.8, ups=4.27, wpb=1581.7, bsz=95.5, num_updates=28300, lr=8.91657e-06, gnorm=2.231, train_wall=23, gb_free=24.2, wall=6684
+2023-09-12 20:19:37 | INFO | train_inner | epoch 001:  28400 / 184396 loss=6.984, nll_loss=3.463, ppl=11.03, wps=6727.4, ups=4.27, wpb=1574, bsz=96.5, num_updates=28400, lr=8.90086e-06, gnorm=2.179, train_wall=23, gb_free=24.1, wall=6707
+2023-09-12 20:20:01 | INFO | train_inner | epoch 001:  28500 / 184396 loss=7.047, nll_loss=3.546, ppl=11.68, wps=6800.1, ups=4.23, wpb=1606.7, bsz=102.2, num_updates=28500, lr=8.88523e-06, gnorm=2.099, train_wall=23, gb_free=24.1, wall=6731
+2023-09-12 20:20:24 | INFO | train_inner | epoch 001:  28600 / 184396 loss=6.996, nll_loss=3.475, ppl=11.12, wps=6600.1, ups=4.29, wpb=1536.8, bsz=91.6, num_updates=28600, lr=8.86969e-06, gnorm=2.256, train_wall=23, gb_free=25.1, wall=6754
+2023-09-12 20:20:48 | INFO | train_inner | epoch 001:  28700 / 184396 loss=7.034, nll_loss=3.527, ppl=11.53, wps=6746.3, ups=4.24, wpb=1591.6, bsz=91.6, num_updates=28700, lr=8.85422e-06, gnorm=2.125, train_wall=23, gb_free=24.8, wall=6777
+2023-09-12 20:21:11 | INFO | train_inner | epoch 001:  28800 / 184396 loss=6.991, nll_loss=3.469, ppl=11.07, wps=6678.1, ups=4.26, wpb=1567.7, bsz=88.2, num_updates=28800, lr=8.83883e-06, gnorm=2.181, train_wall=23, gb_free=25.8, wall=6801
+2023-09-12 20:21:35 | INFO | train_inner | epoch 001:  28900 / 184396 loss=6.973, nll_loss=3.443, ppl=10.87, wps=6591.9, ups=4.28, wpb=1539, bsz=87.9, num_updates=28900, lr=8.82353e-06, gnorm=2.113, train_wall=23, gb_free=26.1, wall=6824
+2023-09-12 20:21:58 | INFO | train_inner | epoch 001:  29000 / 184396 loss=6.999, nll_loss=3.477, ppl=11.14, wps=6729.5, ups=4.26, wpb=1578.6, bsz=80.3, num_updates=29000, lr=8.8083e-06, gnorm=2.331, train_wall=23, gb_free=26.5, wall=6848
+2023-09-12 20:22:22 | INFO | train_inner | epoch 001:  29100 / 184396 loss=7.006, nll_loss=3.491, ppl=11.24, wps=6856.5, ups=4.23, wpb=1620.5, bsz=93.6, num_updates=29100, lr=8.79316e-06, gnorm=2.141, train_wall=23, gb_free=25.7, wall=6871
+2023-09-12 20:22:45 | INFO | train_inner | epoch 001:  29200 / 184396 loss=6.949, nll_loss=3.422, ppl=10.72, wps=6894, ups=4.23, wpb=1631.5, bsz=99.4, num_updates=29200, lr=8.77809e-06, gnorm=2.093, train_wall=23, gb_free=24.2, wall=6895
+2023-09-12 20:23:09 | INFO | train_inner | epoch 001:  29300 / 184396 loss=6.974, nll_loss=3.452, ppl=10.94, wps=6736, ups=4.25, wpb=1584.1, bsz=91.5, num_updates=29300, lr=8.76309e-06, gnorm=2.19, train_wall=23, gb_free=24.3, wall=6919
+2023-09-12 20:23:32 | INFO | train_inner | epoch 001:  29400 / 184396 loss=6.981, nll_loss=3.46, ppl=11.01, wps=6653, ups=4.27, wpb=1559.3, bsz=94.3, num_updates=29400, lr=8.74818e-06, gnorm=2.215, train_wall=23, gb_free=26, wall=6942
+2023-09-12 20:23:56 | INFO | train_inner | epoch 001:  29500 / 184396 loss=6.931, nll_loss=3.394, ppl=10.51, wps=6873.9, ups=4.22, wpb=1627.3, bsz=93.9, num_updates=29500, lr=8.73334e-06, gnorm=2.101, train_wall=23, gb_free=24.8, wall=6966
+2023-09-12 20:24:19 | INFO | train_inner | epoch 001:  29600 / 184396 loss=6.936, nll_loss=3.404, ppl=10.59, wps=6647.2, ups=4.26, wpb=1560.4, bsz=95, num_updates=29600, lr=8.71857e-06, gnorm=2.224, train_wall=23, gb_free=26.2, wall=6989
+2023-09-12 20:24:43 | INFO | train_inner | epoch 001:  29700 / 184396 loss=6.972, nll_loss=3.445, ppl=10.89, wps=6939.3, ups=4.22, wpb=1644.6, bsz=83.7, num_updates=29700, lr=8.70388e-06, gnorm=2.134, train_wall=23, gb_free=24.9, wall=7013
+2023-09-12 20:25:07 | INFO | train_inner | epoch 001:  29800 / 184396 loss=7.01, nll_loss=3.497, ppl=11.29, wps=6881.3, ups=4.22, wpb=1631, bsz=97.5, num_updates=29800, lr=8.68927e-06, gnorm=2.199, train_wall=23, gb_free=24.3, wall=7037
+2023-09-12 20:25:30 | INFO | train_inner | epoch 001:  29900 / 184396 loss=7.021, nll_loss=3.509, ppl=11.38, wps=6654.6, ups=4.3, wpb=1548.3, bsz=91.1, num_updates=29900, lr=8.67472e-06, gnorm=2.194, train_wall=23, gb_free=24.6, wall=7060
+2023-09-12 20:25:54 | INFO | train_inner | epoch 001:  30000 / 184396 loss=6.965, nll_loss=3.445, ppl=10.89, wps=6763.7, ups=4.23, wpb=1599, bsz=102.1, num_updates=30000, lr=8.66025e-06, gnorm=2.053, train_wall=23, gb_free=24, wall=7083
+2023-09-12 20:26:17 | INFO | train_inner | epoch 001:  30100 / 184396 loss=6.975, nll_loss=3.449, ppl=10.92, wps=6743.8, ups=4.27, wpb=1578.5, bsz=88.7, num_updates=30100, lr=8.64586e-06, gnorm=2.154, train_wall=23, gb_free=25.5, wall=7107
+2023-09-12 20:26:41 | INFO | train_inner | epoch 001:  30200 / 184396 loss=6.933, nll_loss=3.398, ppl=10.54, wps=6716.8, ups=4.28, wpb=1570.1, bsz=87.8, num_updates=30200, lr=8.63153e-06, gnorm=2.173, train_wall=23, gb_free=26.2, wall=7130
+2023-09-12 20:27:04 | INFO | train_inner | epoch 001:  30300 / 184396 loss=7.006, nll_loss=3.493, ppl=11.26, wps=6664.5, ups=4.26, wpb=1565.5, bsz=91.9, num_updates=30300, lr=8.61727e-06, gnorm=2.197, train_wall=23, gb_free=24.8, wall=7154
+2023-09-12 20:27:27 | INFO | train_inner | epoch 001:  30400 / 184396 loss=7.008, nll_loss=3.497, ppl=11.29, wps=6726.2, ups=4.27, wpb=1574.5, bsz=96.6, num_updates=30400, lr=8.60309e-06, gnorm=2.128, train_wall=23, gb_free=25.6, wall=7177
+2023-09-12 20:27:51 | INFO | train_inner | epoch 001:  30500 / 184396 loss=6.983, nll_loss=3.461, ppl=11.01, wps=6731.5, ups=4.25, wpb=1583.9, bsz=85.5, num_updates=30500, lr=8.58898e-06, gnorm=2.17, train_wall=23, gb_free=24, wall=7201
+2023-09-12 20:28:15 | INFO | train_inner | epoch 001:  30600 / 184396 loss=6.965, nll_loss=3.441, ppl=10.86, wps=6811.4, ups=4.24, wpb=1605.4, bsz=95, num_updates=30600, lr=8.57493e-06, gnorm=2.108, train_wall=23, gb_free=25.9, wall=7224
+2023-09-12 20:28:38 | INFO | train_inner | epoch 001:  30700 / 184396 loss=6.898, nll_loss=3.36, ppl=10.27, wps=6766.7, ups=4.24, wpb=1596.1, bsz=99.7, num_updates=30700, lr=8.56095e-06, gnorm=2.029, train_wall=23, gb_free=25.2, wall=7248
+2023-09-12 20:29:02 | INFO | train_inner | epoch 001:  30800 / 184396 loss=6.967, nll_loss=3.443, ppl=10.88, wps=6722.4, ups=4.27, wpb=1573.2, bsz=95.4, num_updates=30800, lr=8.54704e-06, gnorm=2.124, train_wall=23, gb_free=26.4, wall=7271
+2023-09-12 20:29:25 | INFO | train_inner | epoch 001:  30900 / 184396 loss=6.97, nll_loss=3.448, ppl=10.92, wps=6792.8, ups=4.24, wpb=1600.2, bsz=95.5, num_updates=30900, lr=8.5332e-06, gnorm=2.231, train_wall=23, gb_free=23.9, wall=7295
+2023-09-12 20:29:49 | INFO | train_inner | epoch 001:  31000 / 184396 loss=6.99, nll_loss=3.473, ppl=11.11, wps=6851.1, ups=4.26, wpb=1609.5, bsz=91, num_updates=31000, lr=8.51943e-06, gnorm=2.21, train_wall=23, gb_free=25.7, wall=7318
+2023-09-12 20:30:12 | INFO | train_inner | epoch 001:  31100 / 184396 loss=6.914, nll_loss=3.377, ppl=10.39, wps=6837.8, ups=4.24, wpb=1611.8, bsz=95.1, num_updates=31100, lr=8.50572e-06, gnorm=2.085, train_wall=23, gb_free=26.2, wall=7342
+2023-09-12 20:30:36 | INFO | train_inner | epoch 001:  31200 / 184396 loss=7.012, nll_loss=3.5, ppl=11.31, wps=6731.8, ups=4.26, wpb=1581.7, bsz=86.2, num_updates=31200, lr=8.49208e-06, gnorm=2.148, train_wall=23, gb_free=24.8, wall=7365
+2023-09-12 20:30:59 | INFO | train_inner | epoch 001:  31300 / 184396 loss=6.943, nll_loss=3.416, ppl=10.67, wps=6821.8, ups=4.25, wpb=1605.3, bsz=94.5, num_updates=31300, lr=8.4785e-06, gnorm=2.187, train_wall=23, gb_free=24.6, wall=7389
+2023-09-12 20:31:23 | INFO | train_inner | epoch 001:  31400 / 184396 loss=6.961, nll_loss=3.438, ppl=10.84, wps=6771.3, ups=4.25, wpb=1594.6, bsz=97.4, num_updates=31400, lr=8.46499e-06, gnorm=2.078, train_wall=23, gb_free=26.4, wall=7412
+2023-09-12 20:31:46 | INFO | train_inner | epoch 001:  31500 / 184396 loss=6.931, nll_loss=3.4, ppl=10.56, wps=6663.4, ups=4.3, wpb=1550.6, bsz=92.5, num_updates=31500, lr=8.45154e-06, gnorm=2.194, train_wall=23, gb_free=25.2, wall=7436
+2023-09-12 20:32:10 | INFO | train_inner | epoch 001:  31600 / 184396 loss=6.95, nll_loss=3.427, ppl=10.76, wps=6715.7, ups=4.24, wpb=1584.3, bsz=98.2, num_updates=31600, lr=8.43816e-06, gnorm=2.099, train_wall=23, gb_free=24.1, wall=7459
+2023-09-12 20:32:33 | INFO | train_inner | epoch 001:  31700 / 184396 loss=6.973, nll_loss=3.455, ppl=10.96, wps=6682.3, ups=4.28, wpb=1560.1, bsz=92.6, num_updates=31700, lr=8.42484e-06, gnorm=2.183, train_wall=23, gb_free=24.4, wall=7483
+2023-09-12 20:32:57 | INFO | train_inner | epoch 001:  31800 / 184396 loss=7.005, nll_loss=3.495, ppl=11.28, wps=6662, ups=4.25, wpb=1569.2, bsz=91.7, num_updates=31800, lr=8.41158e-06, gnorm=2.162, train_wall=23, gb_free=24.3, wall=7506
+2023-09-12 20:33:20 | INFO | train_inner | epoch 001:  31900 / 184396 loss=7.033, nll_loss=3.526, ppl=11.52, wps=6728.1, ups=4.26, wpb=1579.2, bsz=88, num_updates=31900, lr=8.39839e-06, gnorm=2.232, train_wall=23, gb_free=24.6, wall=7530
+2023-09-12 20:33:44 | INFO | train_inner | epoch 001:  32000 / 184396 loss=6.966, nll_loss=3.442, ppl=10.87, wps=6731, ups=4.24, wpb=1586.3, bsz=89.2, num_updates=32000, lr=8.38525e-06, gnorm=2.101, train_wall=23, gb_free=26.2, wall=7553
+2023-09-12 20:34:07 | INFO | train_inner | epoch 001:  32100 / 184396 loss=6.954, nll_loss=3.426, ppl=10.74, wps=6649.1, ups=4.28, wpb=1555.1, bsz=89.6, num_updates=32100, lr=8.37218e-06, gnorm=2.166, train_wall=23, gb_free=24.5, wall=7577
+2023-09-12 20:34:30 | INFO | train_inner | epoch 001:  32200 / 184396 loss=7.004, nll_loss=3.492, ppl=11.25, wps=6760.6, ups=4.26, wpb=1585.8, bsz=90.2, num_updates=32200, lr=8.35917e-06, gnorm=2.069, train_wall=23, gb_free=24.9, wall=7600
+2023-09-12 20:34:54 | INFO | train_inner | epoch 001:  32300 / 184396 loss=6.977, nll_loss=3.459, ppl=11, wps=6766.2, ups=4.25, wpb=1592.3, bsz=98, num_updates=32300, lr=8.34622e-06, gnorm=2.129, train_wall=23, gb_free=25.4, wall=7624
+2023-09-12 20:35:18 | INFO | train_inner | epoch 001:  32400 / 184396 loss=6.915, nll_loss=3.382, ppl=10.43, wps=6857.3, ups=4.24, wpb=1618, bsz=97.7, num_updates=32400, lr=8.33333e-06, gnorm=2.061, train_wall=23, gb_free=26.2, wall=7647
+2023-09-12 20:35:41 | INFO | train_inner | epoch 001:  32500 / 184396 loss=6.912, nll_loss=3.375, ppl=10.38, wps=6687.7, ups=4.26, wpb=1570.8, bsz=87.6, num_updates=32500, lr=8.3205e-06, gnorm=2.15, train_wall=23, gb_free=24.7, wall=7671
+2023-09-12 20:36:05 | INFO | train_inner | epoch 001:  32600 / 184396 loss=6.946, nll_loss=3.418, ppl=10.69, wps=6897.1, ups=4.19, wpb=1646, bsz=90.3, num_updates=32600, lr=8.30773e-06, gnorm=2.053, train_wall=24, gb_free=24.3, wall=7695
+2023-09-12 20:36:28 | INFO | train_inner | epoch 001:  32700 / 184396 loss=6.959, nll_loss=3.439, ppl=10.84, wps=6619.3, ups=4.27, wpb=1550.5, bsz=91.7, num_updates=32700, lr=8.29502e-06, gnorm=2.181, train_wall=23, gb_free=24.3, wall=7718
+2023-09-12 20:36:52 | INFO | train_inner | epoch 001:  32800 / 184396 loss=6.966, nll_loss=3.446, ppl=10.9, wps=6677.6, ups=4.29, wpb=1557.6, bsz=93.9, num_updates=32800, lr=8.28236e-06, gnorm=2.155, train_wall=23, gb_free=26.1, wall=7741
+2023-09-12 20:37:15 | INFO | train_inner | epoch 001:  32900 / 184396 loss=6.97, nll_loss=3.446, ppl=10.9, wps=6834.6, ups=4.25, wpb=1607.2, bsz=85.1, num_updates=32900, lr=8.26977e-06, gnorm=2.164, train_wall=23, gb_free=25.3, wall=7765
+2023-09-12 20:37:39 | INFO | train_inner | epoch 001:  33000 / 184396 loss=6.938, nll_loss=3.41, ppl=10.63, wps=6717, ups=4.26, wpb=1578.3, bsz=87.8, num_updates=33000, lr=8.25723e-06, gnorm=2.056, train_wall=23, gb_free=24.9, wall=7788
+2023-09-12 20:38:02 | INFO | train_inner | epoch 001:  33100 / 184396 loss=6.928, nll_loss=3.4, ppl=10.56, wps=6869.1, ups=4.23, wpb=1624.6, bsz=92.6, num_updates=33100, lr=8.24475e-06, gnorm=2.154, train_wall=23, gb_free=24.4, wall=7812
+2023-09-12 20:38:26 | INFO | train_inner | epoch 001:  33200 / 184396 loss=7.013, nll_loss=3.503, ppl=11.34, wps=6798.5, ups=4.24, wpb=1603.5, bsz=88.4, num_updates=33200, lr=8.23232e-06, gnorm=2.104, train_wall=23, gb_free=25.5, wall=7836
+2023-09-12 20:38:49 | INFO | train_inner | epoch 001:  33300 / 184396 loss=6.979, nll_loss=3.466, ppl=11.05, wps=6870.9, ups=4.25, wpb=1618.5, bsz=101.8, num_updates=33300, lr=8.21995e-06, gnorm=2.114, train_wall=23, gb_free=24.9, wall=7859
+2023-09-12 20:39:13 | INFO | train_inner | epoch 001:  33400 / 184396 loss=6.951, nll_loss=3.425, ppl=10.74, wps=6875.5, ups=4.24, wpb=1622.9, bsz=95.6, num_updates=33400, lr=8.20763e-06, gnorm=2.081, train_wall=23, gb_free=25.9, wall=7883
+2023-09-12 20:39:37 | INFO | train_inner | epoch 001:  33500 / 184396 loss=6.932, nll_loss=3.407, ppl=10.61, wps=6707.1, ups=4.26, wpb=1576, bsz=98.9, num_updates=33500, lr=8.19538e-06, gnorm=2.126, train_wall=23, gb_free=26.5, wall=7906
+2023-09-12 20:40:00 | INFO | train_inner | epoch 001:  33600 / 184396 loss=6.977, nll_loss=3.455, ppl=10.97, wps=6812.2, ups=4.23, wpb=1610, bsz=90.1, num_updates=33600, lr=8.18317e-06, gnorm=2.346, train_wall=23, gb_free=24.2, wall=7930
+2023-09-12 20:40:24 | INFO | train_inner | epoch 001:  33700 / 184396 loss=6.965, nll_loss=3.447, ppl=10.91, wps=6791.5, ups=4.25, wpb=1597.6, bsz=95.4, num_updates=33700, lr=8.17102e-06, gnorm=2.116, train_wall=23, gb_free=24.1, wall=7953
+2023-09-12 20:40:47 | INFO | train_inner | epoch 001:  33800 / 184396 loss=6.921, nll_loss=3.388, ppl=10.47, wps=6921.7, ups=4.23, wpb=1636.4, bsz=95, num_updates=33800, lr=8.15892e-06, gnorm=2.13, train_wall=23, gb_free=24.1, wall=7977
+2023-09-12 20:41:11 | INFO | train_inner | epoch 001:  33900 / 184396 loss=6.95, nll_loss=3.426, ppl=10.74, wps=6657.6, ups=4.28, wpb=1557.1, bsz=88.1, num_updates=33900, lr=8.14688e-06, gnorm=2.126, train_wall=23, gb_free=26.1, wall=8000
+2023-09-12 20:41:34 | INFO | train_inner | epoch 001:  34000 / 184396 loss=6.948, nll_loss=3.422, ppl=10.72, wps=6889.9, ups=4.23, wpb=1627.6, bsz=94.5, num_updates=34000, lr=8.13489e-06, gnorm=2.065, train_wall=23, gb_free=24.2, wall=8024
+2023-09-12 20:41:58 | INFO | train_inner | epoch 001:  34100 / 184396 loss=6.943, nll_loss=3.411, ppl=10.64, wps=6711.9, ups=4.24, wpb=1582.5, bsz=81.9, num_updates=34100, lr=8.12296e-06, gnorm=2.248, train_wall=23, gb_free=24.4, wall=8048
+2023-09-12 20:42:22 | INFO | train_inner | epoch 001:  34200 / 184396 loss=6.895, nll_loss=3.361, ppl=10.27, wps=6819, ups=4.23, wpb=1611.5, bsz=98.9, num_updates=34200, lr=8.11107e-06, gnorm=2.011, train_wall=23, gb_free=26.3, wall=8071
+2023-09-12 20:42:45 | INFO | train_inner | epoch 001:  34300 / 184396 loss=6.961, nll_loss=3.441, ppl=10.86, wps=6637.1, ups=4.28, wpb=1551.5, bsz=91.5, num_updates=34300, lr=8.09924e-06, gnorm=2.122, train_wall=23, gb_free=24.8, wall=8095
+2023-09-12 20:43:08 | INFO | train_inner | epoch 001:  34400 / 184396 loss=6.921, nll_loss=3.388, ppl=10.47, wps=6607.5, ups=4.29, wpb=1540.4, bsz=84.8, num_updates=34400, lr=8.08746e-06, gnorm=2.208, train_wall=23, gb_free=24.9, wall=8118
+2023-09-12 20:43:32 | INFO | train_inner | epoch 001:  34500 / 184396 loss=6.967, nll_loss=3.445, ppl=10.89, wps=6619.5, ups=4.29, wpb=1541.7, bsz=82.4, num_updates=34500, lr=8.07573e-06, gnorm=2.196, train_wall=23, gb_free=24.4, wall=8141
+2023-09-12 20:43:55 | INFO | train_inner | epoch 001:  34600 / 184396 loss=7.018, nll_loss=3.512, ppl=11.41, wps=6680.1, ups=4.28, wpb=1559.3, bsz=87.7, num_updates=34600, lr=8.06405e-06, gnorm=2.247, train_wall=23, gb_free=24.5, wall=8165
+2023-09-12 20:44:19 | INFO | train_inner | epoch 001:  34700 / 184396 loss=6.944, nll_loss=3.42, ppl=10.71, wps=6828.1, ups=4.24, wpb=1609.9, bsz=93.1, num_updates=34700, lr=8.05242e-06, gnorm=2.094, train_wall=23, gb_free=24.8, wall=8188
+2023-09-12 20:44:42 | INFO | train_inner | epoch 001:  34800 / 184396 loss=6.933, nll_loss=3.408, ppl=10.61, wps=6748.1, ups=4.22, wpb=1598.4, bsz=101.5, num_updates=34800, lr=8.04084e-06, gnorm=2.105, train_wall=23, gb_free=24.7, wall=8212
+2023-09-12 20:45:06 | INFO | train_inner | epoch 001:  34900 / 184396 loss=7.005, nll_loss=3.496, ppl=11.28, wps=6739.3, ups=4.28, wpb=1575, bsz=88.7, num_updates=34900, lr=8.02932e-06, gnorm=2.121, train_wall=23, gb_free=24.8, wall=8235
+2023-09-12 20:45:29 | INFO | train_inner | epoch 001:  35000 / 184396 loss=6.989, nll_loss=3.475, ppl=11.12, wps=6775.5, ups=4.26, wpb=1590.3, bsz=94.2, num_updates=35000, lr=8.01784e-06, gnorm=2.154, train_wall=23, gb_free=26.5, wall=8259
+2023-09-12 20:45:53 | INFO | train_inner | epoch 001:  35100 / 184396 loss=6.964, nll_loss=3.448, ppl=10.91, wps=6832.3, ups=4.25, wpb=1608, bsz=100.9, num_updates=35100, lr=8.00641e-06, gnorm=2.074, train_wall=23, gb_free=25.4, wall=8282
+2023-09-12 20:46:16 | INFO | train_inner | epoch 001:  35200 / 184396 loss=6.975, nll_loss=3.456, ppl=10.97, wps=6775, ups=4.27, wpb=1585.5, bsz=90.1, num_updates=35200, lr=7.99503e-06, gnorm=2.141, train_wall=23, gb_free=25.3, wall=8306
+2023-09-12 20:46:39 | INFO | train_inner | epoch 001:  35300 / 184396 loss=6.977, nll_loss=3.466, ppl=11.05, wps=6745.6, ups=4.25, wpb=1586.9, bsz=100.1, num_updates=35300, lr=7.98369e-06, gnorm=2.086, train_wall=23, gb_free=24.7, wall=8329
+2023-09-12 20:47:03 | INFO | train_inner | epoch 001:  35400 / 184396 loss=6.931, nll_loss=3.403, ppl=10.58, wps=6697.4, ups=4.26, wpb=1572.5, bsz=90, num_updates=35400, lr=7.97241e-06, gnorm=2.204, train_wall=23, gb_free=26.4, wall=8353
+2023-09-12 20:47:26 | INFO | train_inner | epoch 001:  35500 / 184396 loss=6.946, nll_loss=3.424, ppl=10.74, wps=6787.4, ups=4.28, wpb=1586.4, bsz=97.9, num_updates=35500, lr=7.96117e-06, gnorm=2.054, train_wall=23, gb_free=26.2, wall=8376
+2023-09-12 20:47:50 | INFO | train_inner | epoch 001:  35600 / 184396 loss=6.944, nll_loss=3.422, ppl=10.72, wps=6919.3, ups=4.24, wpb=1633, bsz=103.4, num_updates=35600, lr=7.94998e-06, gnorm=1.996, train_wall=23, gb_free=24.9, wall=8400
+2023-09-12 20:48:14 | INFO | train_inner | epoch 001:  35700 / 184396 loss=6.948, nll_loss=3.426, ppl=10.75, wps=6785.4, ups=4.24, wpb=1600.8, bsz=93.1, num_updates=35700, lr=7.93884e-06, gnorm=2.099, train_wall=23, gb_free=24.4, wall=8423
+2023-09-12 20:48:37 | INFO | train_inner | epoch 001:  35800 / 184396 loss=7.029, nll_loss=3.527, ppl=11.53, wps=6712.2, ups=4.29, wpb=1565.4, bsz=83.7, num_updates=35800, lr=7.92775e-06, gnorm=2.178, train_wall=23, gb_free=26.4, wall=8447
+2023-09-12 20:49:00 | INFO | train_inner | epoch 001:  35900 / 184396 loss=6.956, nll_loss=3.437, ppl=10.83, wps=6812.4, ups=4.23, wpb=1608.8, bsz=92.8, num_updates=35900, lr=7.9167e-06, gnorm=2.079, train_wall=23, gb_free=24.4, wall=8470
+2023-09-12 20:49:24 | INFO | train_inner | epoch 001:  36000 / 184396 loss=6.967, nll_loss=3.454, ppl=10.96, wps=6743.1, ups=4.27, wpb=1579, bsz=95.1, num_updates=36000, lr=7.90569e-06, gnorm=2.12, train_wall=23, gb_free=26.1, wall=8494
+2023-09-12 20:49:47 | INFO | train_inner | epoch 001:  36100 / 184396 loss=6.933, nll_loss=3.408, ppl=10.62, wps=6741.8, ups=4.26, wpb=1584.2, bsz=94.6, num_updates=36100, lr=7.89474e-06, gnorm=2.053, train_wall=23, gb_free=24.6, wall=8517
+2023-09-12 20:50:11 | INFO | train_inner | epoch 001:  36200 / 184396 loss=6.974, nll_loss=3.459, ppl=11, wps=6783.2, ups=4.24, wpb=1601.7, bsz=95.3, num_updates=36200, lr=7.88382e-06, gnorm=2.092, train_wall=23, gb_free=24.3, wall=8541
+2023-09-12 20:50:35 | INFO | train_inner | epoch 001:  36300 / 184396 loss=6.998, nll_loss=3.493, ppl=11.26, wps=6792.7, ups=4.24, wpb=1603.1, bsz=93.3, num_updates=36300, lr=7.87296e-06, gnorm=2.111, train_wall=23, gb_free=26.2, wall=8564
+2023-09-12 20:50:58 | INFO | train_inner | epoch 001:  36400 / 184396 loss=7.036, nll_loss=3.534, ppl=11.58, wps=6619.7, ups=4.32, wpb=1533.6, bsz=78.2, num_updates=36400, lr=7.86214e-06, gnorm=2.198, train_wall=23, gb_free=25.2, wall=8587
+2023-09-12 20:51:21 | INFO | train_inner | epoch 001:  36500 / 184396 loss=6.952, nll_loss=3.432, ppl=10.79, wps=6753.4, ups=4.26, wpb=1587.1, bsz=95.4, num_updates=36500, lr=7.85136e-06, gnorm=2.131, train_wall=23, gb_free=24.5, wall=8611
+2023-09-12 20:51:45 | INFO | train_inner | epoch 001:  36600 / 184396 loss=6.919, nll_loss=3.39, ppl=10.49, wps=6639.3, ups=4.25, wpb=1560.4, bsz=88.1, num_updates=36600, lr=7.84063e-06, gnorm=2.079, train_wall=23, gb_free=24.3, wall=8634
+2023-09-12 20:52:08 | INFO | train_inner | epoch 001:  36700 / 184396 loss=6.954, nll_loss=3.437, ppl=10.83, wps=6821, ups=4.26, wpb=1600.5, bsz=94, num_updates=36700, lr=7.82994e-06, gnorm=2.099, train_wall=23, gb_free=25.4, wall=8658
+2023-09-12 20:52:32 | INFO | train_inner | epoch 001:  36800 / 184396 loss=6.897, nll_loss=3.361, ppl=10.28, wps=6694.2, ups=4.25, wpb=1574.7, bsz=93.1, num_updates=36800, lr=7.81929e-06, gnorm=2.09, train_wall=23, gb_free=25.8, wall=8681
+2023-09-12 20:52:55 | INFO | train_inner | epoch 001:  36900 / 184396 loss=6.911, nll_loss=3.381, ppl=10.42, wps=6836.2, ups=4.23, wpb=1614.5, bsz=89.5, num_updates=36900, lr=7.80869e-06, gnorm=2.198, train_wall=23, gb_free=26.1, wall=8705
+2023-09-12 20:53:19 | INFO | train_inner | epoch 001:  37000 / 184396 loss=6.953, nll_loss=3.435, ppl=10.81, wps=6807.1, ups=4.25, wpb=1601.6, bsz=93.1, num_updates=37000, lr=7.79813e-06, gnorm=2.151, train_wall=23, gb_free=25.1, wall=8729
+2023-09-12 20:53:43 | INFO | train_inner | epoch 001:  37100 / 184396 loss=6.919, nll_loss=3.393, ppl=10.5, wps=6751.2, ups=4.23, wpb=1594.5, bsz=96.8, num_updates=37100, lr=7.78761e-06, gnorm=2.034, train_wall=23, gb_free=24.3, wall=8752
+2023-09-12 20:54:06 | INFO | train_inner | epoch 001:  37200 / 184396 loss=6.923, nll_loss=3.396, ppl=10.53, wps=6768.3, ups=4.23, wpb=1599.6, bsz=91.7, num_updates=37200, lr=7.77714e-06, gnorm=2.084, train_wall=23, gb_free=24.5, wall=8776
+2023-09-12 20:54:30 | INFO | train_inner | epoch 001:  37300 / 184396 loss=6.922, nll_loss=3.393, ppl=10.5, wps=6786.7, ups=4.27, wpb=1591.1, bsz=84.2, num_updates=37300, lr=7.76671e-06, gnorm=2.109, train_wall=23, gb_free=25.4, wall=8799
+2023-09-12 20:54:53 | INFO | train_inner | epoch 001:  37400 / 184396 loss=6.943, nll_loss=3.422, ppl=10.72, wps=6630.3, ups=4.3, wpb=1540.9, bsz=85.8, num_updates=37400, lr=7.75632e-06, gnorm=2.239, train_wall=23, gb_free=24.5, wall=8823
+2023-09-12 20:55:16 | INFO | train_inner | epoch 001:  37500 / 184396 loss=6.946, nll_loss=3.431, ppl=10.79, wps=6793.4, ups=4.23, wpb=1604.3, bsz=100.2, num_updates=37500, lr=7.74597e-06, gnorm=2.054, train_wall=23, gb_free=26.7, wall=8846
+2023-09-12 20:55:40 | INFO | train_inner | epoch 001:  37600 / 184396 loss=6.907, nll_loss=3.375, ppl=10.37, wps=6715.5, ups=4.28, wpb=1570.5, bsz=88.8, num_updates=37600, lr=7.73566e-06, gnorm=2.177, train_wall=23, gb_free=25.5, wall=8870
+2023-09-12 20:56:03 | INFO | train_inner | epoch 001:  37700 / 184396 loss=6.947, nll_loss=3.429, ppl=10.77, wps=6696.6, ups=4.27, wpb=1566.5, bsz=92.7, num_updates=37700, lr=7.72539e-06, gnorm=2.266, train_wall=23, gb_free=25.8, wall=8893
+2023-09-12 20:56:27 | INFO | train_inner | epoch 001:  37800 / 184396 loss=6.905, nll_loss=3.374, ppl=10.37, wps=6706.9, ups=4.27, wpb=1570.3, bsz=88.3, num_updates=37800, lr=7.71517e-06, gnorm=2.105, train_wall=23, gb_free=25.1, wall=8916
+2023-09-12 20:56:50 | INFO | train_inner | epoch 001:  37900 / 184396 loss=6.931, nll_loss=3.411, ppl=10.64, wps=6695.4, ups=4.27, wpb=1566.9, bsz=96.3, num_updates=37900, lr=7.70498e-06, gnorm=2.115, train_wall=23, gb_free=24.8, wall=8940
+2023-09-12 20:57:14 | INFO | train_inner | epoch 001:  38000 / 184396 loss=6.965, nll_loss=3.449, ppl=10.92, wps=6764, ups=4.24, wpb=1594.3, bsz=86.9, num_updates=38000, lr=7.69484e-06, gnorm=2.084, train_wall=23, gb_free=24.7, wall=8963
+2023-09-12 20:57:37 | INFO | train_inner | epoch 001:  38100 / 184396 loss=6.892, nll_loss=3.362, ppl=10.28, wps=6838.3, ups=4.21, wpb=1622.5, bsz=104.6, num_updates=38100, lr=7.68473e-06, gnorm=1.971, train_wall=23, gb_free=25.4, wall=8987
+2023-09-12 20:58:01 | INFO | train_inner | epoch 001:  38200 / 184396 loss=6.885, nll_loss=3.347, ppl=10.18, wps=6742.6, ups=4.27, wpb=1579.4, bsz=93.4, num_updates=38200, lr=7.67467e-06, gnorm=2.106, train_wall=23, gb_free=25.2, wall=9010
+2023-09-12 20:58:24 | INFO | train_inner | epoch 001:  38300 / 184396 loss=6.987, nll_loss=3.472, ppl=11.1, wps=6710.5, ups=4.28, wpb=1567.2, bsz=80.4, num_updates=38300, lr=7.66464e-06, gnorm=2.111, train_wall=23, gb_free=25.6, wall=9034
+2023-09-12 20:58:48 | INFO | train_inner | epoch 001:  38400 / 184396 loss=6.974, nll_loss=3.463, ppl=11.02, wps=6652.8, ups=4.27, wpb=1558.5, bsz=87.6, num_updates=38400, lr=7.65466e-06, gnorm=2.166, train_wall=23, gb_free=24.1, wall=9057
+2023-09-12 20:59:11 | INFO | train_inner | epoch 001:  38500 / 184396 loss=6.894, nll_loss=3.364, ppl=10.3, wps=6870.4, ups=4.23, wpb=1622.5, bsz=95.5, num_updates=38500, lr=7.64471e-06, gnorm=2.001, train_wall=23, gb_free=24.6, wall=9081
+2023-09-12 20:59:34 | INFO | train_inner | epoch 001:  38600 / 184396 loss=6.977, nll_loss=3.468, ppl=11.06, wps=6487.1, ups=4.31, wpb=1503.6, bsz=85.5, num_updates=38600, lr=7.6348e-06, gnorm=2.09, train_wall=23, gb_free=25, wall=9104
+2023-09-12 20:59:58 | INFO | train_inner | epoch 001:  38700 / 184396 loss=6.909, nll_loss=3.382, ppl=10.43, wps=6734.9, ups=4.28, wpb=1574, bsz=96.2, num_updates=38700, lr=7.62493e-06, gnorm=2.118, train_wall=23, gb_free=24.8, wall=9127
+2023-09-12 21:00:21 | INFO | train_inner | epoch 001:  38800 / 184396 loss=6.914, nll_loss=3.388, ppl=10.47, wps=6805.7, ups=4.26, wpb=1597.5, bsz=98.9, num_updates=38800, lr=7.6151e-06, gnorm=2.046, train_wall=23, gb_free=25.4, wall=9151
+2023-09-12 21:00:45 | INFO | train_inner | epoch 001:  38900 / 184396 loss=6.898, nll_loss=3.372, ppl=10.35, wps=6819.7, ups=4.23, wpb=1612.3, bsz=101, num_updates=38900, lr=7.6053e-06, gnorm=2.317, train_wall=23, gb_free=24.6, wall=9175
+2023-09-12 21:01:08 | INFO | train_inner | epoch 001:  39000 / 184396 loss=6.932, nll_loss=3.408, ppl=10.61, wps=6699, ups=4.26, wpb=1574.2, bsz=91.5, num_updates=39000, lr=7.59555e-06, gnorm=2.06, train_wall=23, gb_free=24.7, wall=9198
+2023-09-12 21:01:32 | INFO | train_inner | epoch 001:  39100 / 184396 loss=6.94, nll_loss=3.417, ppl=10.68, wps=6613.9, ups=4.31, wpb=1533.7, bsz=84.5, num_updates=39100, lr=7.58583e-06, gnorm=2.119, train_wall=23, gb_free=24.4, wall=9221
+2023-09-12 21:01:55 | INFO | train_inner | epoch 001:  39200 / 184396 loss=6.995, nll_loss=3.488, ppl=11.22, wps=6619.3, ups=4.3, wpb=1539, bsz=87.2, num_updates=39200, lr=7.57614e-06, gnorm=3.12, train_wall=23, gb_free=24.7, wall=9244
+2023-09-12 21:02:18 | INFO | train_inner | epoch 001:  39300 / 184396 loss=6.896, nll_loss=3.368, ppl=10.32, wps=6691.1, ups=4.25, wpb=1573.3, bsz=95.4, num_updates=39300, lr=7.5665e-06, gnorm=2.067, train_wall=23, gb_free=24.2, wall=9268
+2023-09-12 21:02:42 | INFO | train_inner | epoch 001:  39400 / 184396 loss=6.915, nll_loss=3.39, ppl=10.48, wps=6861.8, ups=4.24, wpb=1618.7, bsz=100.3, num_updates=39400, lr=7.55689e-06, gnorm=2.124, train_wall=23, gb_free=24.8, wall=9292
+2023-09-12 21:03:05 | INFO | train_inner | epoch 001:  39500 / 184396 loss=6.925, nll_loss=3.403, ppl=10.58, wps=6760.7, ups=4.25, wpb=1591.6, bsz=91.5, num_updates=39500, lr=7.54732e-06, gnorm=2.064, train_wall=23, gb_free=25.1, wall=9315
+2023-09-12 21:03:29 | INFO | train_inner | epoch 001:  39600 / 184396 loss=6.958, nll_loss=3.442, ppl=10.87, wps=6757.3, ups=4.28, wpb=1578.7, bsz=89.2, num_updates=39600, lr=7.53778e-06, gnorm=2.046, train_wall=23, gb_free=24.5, wall=9338
+2023-09-12 21:03:52 | INFO | train_inner | epoch 001:  39700 / 184396 loss=6.924, nll_loss=3.402, ppl=10.57, wps=6940.3, ups=4.24, wpb=1638.5, bsz=97.1, num_updates=39700, lr=7.52828e-06, gnorm=2.03, train_wall=23, gb_free=24.3, wall=9362
+2023-09-12 21:04:16 | INFO | train_inner | epoch 001:  39800 / 184396 loss=6.957, nll_loss=3.442, ppl=10.87, wps=6849.5, ups=4.24, wpb=1616.8, bsz=91.3, num_updates=39800, lr=7.51882e-06, gnorm=2.047, train_wall=23, gb_free=23.6, wall=9386
+2023-09-12 21:04:40 | INFO | train_inner | epoch 001:  39900 / 184396 loss=6.92, nll_loss=3.397, ppl=10.53, wps=6717.5, ups=4.25, wpb=1581.2, bsz=89.8, num_updates=39900, lr=7.50939e-06, gnorm=2.06, train_wall=23, gb_free=25.5, wall=9409
+2023-09-12 21:05:03 | INFO | train_inner | epoch 001:  40000 / 184396 loss=6.95, nll_loss=3.433, ppl=10.8, wps=6762.6, ups=4.26, wpb=1586.3, bsz=89.3, num_updates=40000, lr=7.5e-06, gnorm=2.083, train_wall=23, gb_free=24.2, wall=9433
+2023-09-12 21:05:03 | INFO | fairseq_cli.train | Stopping training due to num_updates: 40000 >= max_update: 40000
+2023-09-12 21:05:03 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2023-09-12 21:05:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | start batch sampler: mem usage: used=37130.69140625Mb; avail=470074.7421875Mb
+2023-09-12 21:05:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | [valid] @batch_sampler order indices time: 0:00:00.005893
+2023-09-12 21:05:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=37130.69140625Mb; avail=470074.7421875Mb
+2023-09-12 21:05:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | [valid] @batch_sampler filter_by_size time: 0:00:00.420873
+2023-09-12 21:05:03 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=37130.8515625Mb; avail=470095.578125Mb
+2023-09-12 21:05:04 | INFO | fairseq.tasks.translation_multi_simple_epoch | [valid] @batch_sampler batch_by_size time: 0:00:00.325796
+2023-09-12 21:05:04 | INFO | fairseq.tasks.translation_multi_simple_epoch | [valid] per epoch batch_sampler set-up time: 0:00:00.753225
+2023-09-12 21:05:04 | INFO | fairseq.tasks.translation_multi_simple_epoch | mem usage: used=37130.71875Mb; avail=470074.71484375Mb
+/gpfs/work2/0/einf3822/Lu/Multilingual_translation-main/fairseq/utils.py:375: UserWarning: amp_C fused kernels unavailable, disabling multi_tensor_l2norm; you may get better performance by installing NVIDIA's apex library
+  "amp_C fused kernels unavailable, disabling multi_tensor_l2norm; "
+2023-09-12 21:05:37 | INFO | valid | epoch 001 | valid on 'valid' subset | loss 6.691 | nll_loss 2.948 | ppl 7.72 | wps 22633 | wpb 725.2 | bsz 38.5 | num_updates 40000
+saved best is 6.691
+2023-09-12 21:05:37 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 1 @ 40000 updates
+2023-09-12 21:05:37 | INFO | fairseq.trainer | Saving checkpoint to /gpfs/work2/0/einf3822/Lu/Multilingual_translation-main/dense_10to10/0.001/checkpoint_best.pt
+2023-09-12 21:05:49 | INFO | fairseq.trainer | Finished saving checkpoint to /gpfs/work2/0/einf3822/Lu/Multilingual_translation-main/dense_10to10/0.001/checkpoint_best.pt
+2023-09-12 21:05:54 | INFO | fairseq.checkpoint_utils | Saved checkpoint dense_10to10/0.001/checkpoint_best.pt (epoch 1 @ 40000 updates, score 6.691) (writing took 16.68216619687155 seconds)
+2023-09-12 21:05:54 | INFO | fairseq_cli.train | end of epoch 1 (average epoch stats below)
+2023-09-12 21:05:54 | INFO | train | epoch 001 | loss 7.401 | nll_loss 3.856 | ppl 14.48 | wps 6705.8 | ups 4.23 | wpb 1586.9 | bsz 92.9 | num_updates 40000 | lr 7.5e-06 | gnorm 5.895 | train_wall 9285 | gb_free 24.2 | wall 9484
+2023-09-12 21:05:54 | INFO | fairseq_cli.train | done training in 9468.0 seconds
+
+JOB STATISTICS
+==============
+Job ID: 3850101
+Cluster: snellius
+User/Group: xiaoq/xiaoq
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 02:46:44
+CPU Efficiency: 5.83% of 1-23:40:12 core-walltime
+Job Wall-clock time: 02:38:54
+Memory Utilized: 10.45 GB
+Memory Efficiency: 8.70% of 120.00 GB

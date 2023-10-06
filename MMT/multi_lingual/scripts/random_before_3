@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --job-name=random_before_multilingual_3
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gpus-per-node=1
+#SBATCH --gpus=1
+#SBATCH -t 3-00:00:00
+#SBATCH --cpus-per-task=18
+#SBATCH -o random_before_multilingual_3.out
+
+
+source /home/sliu/miniconda3/etc/profile.d/conda.sh
+source activate slak
+
+GPU=0
+SAVE_DIR=random_before
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.2 1
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.36 2
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.488 3
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.590 4
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.672 5
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.738 6
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.791 7
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.8325 8
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.866 9
+bash multi_lingual/${SAVE_DIR}/10to1.sh $GPU 0.893 10
