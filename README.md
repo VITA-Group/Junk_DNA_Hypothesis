@@ -101,7 +101,7 @@ done
 ### Scripts example
 
 ```
-
+cd ./GLUE_tasks
 for seed in 41 42 43
 do
   for TASK_NAME in cola sst2
@@ -143,7 +143,7 @@ done
 
 ```
 
-vary 
+cd ./GLUE_tasks 
 
 for seed in 41 42 43
 do
