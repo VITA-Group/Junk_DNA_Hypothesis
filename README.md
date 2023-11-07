@@ -242,5 +242,11 @@ done
 if you find this repo is helpful, please cite
 
 ```
+@article{yin2023junk,
+  title={Junk DNA Hypothesis: A Task-Centric Angle of LLM Pre-trained Weights through Sparsity},
+  author={Yin, Lu and Liu, Shiwei and Jaiswal, Ajay and Kundu, Souvik and Wang, Zhangyang},
+  journal={arXiv preprint arXiv:2310.02277},
+  year={2023}
+}
 
 ```
