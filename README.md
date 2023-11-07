@@ -16,11 +16,11 @@ Table of contents
 --- 
 
 ## Installation 
-Please check [INSTALL.md](INSTALL.md) for installation instructinos.
+Please check [INSTALL.md](INSTALL.md) for installation instructions.
 
 
 
-## Various Task diffculty
+## Various Task difficulty
 
 
 We provide a quick overview of the arguments:  
