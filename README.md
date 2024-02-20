@@ -64,17 +64,27 @@ TO BE RELEASED SOON
 ```
 
 
+### TASK DIFFICULTY SETTING 4: Varying number of k-shot examples for in-context learning
 
-### Scripts 
-
-in the `./open_closed_book` folder
-
-
-
+```
+TO BE RELEASED SOON
+```
 
 
-### Task Difficulty Setting 4: Estimating LLM-facing Task Difficulty by Normalized Human-LLM Performance Gap
---- 
+### TASK DIFFICULTY SETTING 5: TASK DIFFICULTY SETTING 5: Estimating LLM-facing Task Difficulty by Normalized Human-LLM Performance Gap
+
+```
+TO BE RELEASED SOON
+```
+
+
+
+### TASK DIFFICULTY SETTING 6: TASK DIFFICULTY SETTING 6: Factoid-based v.s. Multiple-choice QA
+```
+TO BE RELEASED SOON
+```
+
+
 
 ### Scripts example
 
