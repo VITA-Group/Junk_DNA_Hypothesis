@@ -1,12 +1,12 @@
-#  [Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs)](https://arxiv.org/pdf/2310.02277.pdf)
+#  [Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs [ICML 2024]](https://arxiv.org/pdf/2310.02277.pdf)
 
-
+**Official PyTorch implementation of Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs**.
 
 [Lu Yin*](https://luuyin.com//), [Ajay Jaiswal*](https://ajay1994.github.io/), [Shiwei Liu](https://shiweiliuiiiiiii.github.io/),[Souvik Kundu](https://ksouvik52.github.io/), [Zhangyang Wang](https://vita-group.github.io/)
 
-University of Texas at Austin, Eindhoven University of Technology, University of Oxford, Intel Labs
+University of Texas at Austin, University of Surrey, Eindhoven University of Technology, University of Oxford, Intel Labs
 
-The code can be contacted at l.yin@tue.nl.
+The code can be contacted at l.yin@surrey.ac.uk.
 
 Table of contents
 * [Installation](#installation)
@@ -14,6 +14,14 @@ Table of contents
 * [Are Pre-trained Magnitude Values Indeed the True Gem?](#are-pre-trained-magnitude-values-indeed-the-true-gem?)
 
 --- 
+
+
+## Abstract
+
+We present $\textit{Junk DNA Hypothesis}$ by adopting a novel $\textit{task-centric}$ angle for the pre-trained weights of large language models (LLMs). It has been believed that weights in LLMs contain significant redundancy, leading to the conception that a considerable chunk of the parameters can be removed by $\textit{pruning}$ without compromising performance. Contrary to this belief, this paper presents a $\textit{counter-argument}$: small-magnitude weights of pre-trained model weights encode vital knowledge 
+essential for tackling difficult downstream tasks - manifested as the $\textbf{monotonic}$ $\textbf{relationship}$ between the performance drop of downstream tasks across the difficulty spectrum, as we prune more pre-trained weights by magnitude.
+ Moreover, we reveal that these seemingly inconsequential weights can result in $\textbf{irreparable loss}$ of knowledge and performance degradation in difficult tasks, even when downstream continual training is allowed. Interestingly, our evaluations show that the other popular compression, namely $\textbf{quantization}$  $\textbf{fail}$ to exhibit similar ``monotonic" effect and does not as convincingly disentangle this task-difficulty information. To study formally, we introduce several quantifiable metrics to $\textit{gauge the downstream task difficulty}$: (a) within the same task category, and (b) across different task categories. Our extensive experiments substantiate the Junk DNA Hypothesis across a diverse range of model sizes, tasks, datasets, and even pruning methods.
+
 
 ## Installation 
 Please check [INSTALL.md](INSTALL.md) for installation instructions.
@@ -31,66 +39,6 @@ We provide a quick overview of the arguments:
 - `--method`: a flag to of the output_dir.
 
 
-
-### TASK DIFFICULTY SETTING 2: Varying the Adequacy of Target Domain Data
---- 
-### Scripts example
-
-```
-TO BE RELEASED SOON
-```
-
-
-
-
-### TASK DIFFICULTY SETTING 2: Varying the Option Count in Multiple-choice QA Setting
---- 
-
-
-### Scripts example
-
-
-```
-TO BE RELEASED SOON
-```
-
-
-
-### TASK DIFFICULTY SETTING 3: Varying context length for Retrieval-Augmented QA
---- 
-
-```
-TO BE RELEASED SOON
-```
-
-
-### TASK DIFFICULTY SETTING 4: Varying number of k-shot examples for in-context learning
-
-```
-TO BE RELEASED SOON
-```
-
-
-### TASK DIFFICULTY SETTING 5: TASK DIFFICULTY SETTING 5: Estimating LLM-facing Task Difficulty by Normalized Human-LLM Performance Gap
-
-```
-TO BE RELEASED SOON
-```
-
-
-
-### TASK DIFFICULTY SETTING 6: TASK DIFFICULTY SETTING 6: Factoid-based v.s. Multiple-choice QA
-```
-TO BE RELEASED SOON
-```
-
-
-
-### Scripts example
-
-```
-TO BE RELEASED SOON
-```
 
 
 ## Are Pre-trained Magnitude Values Indeed the True Gem?
@@ -141,6 +89,85 @@ done
 <img src="./Images_png/TRUE_GEM.png" width="700" height="380">
 </p>
 
+
+### Task Difficulty Setting: Varying the Adequacy of Target Domain Data
+--- 
+### Scripts Example
+
+
+
+```
+TO BE RELEASED SOON
+```
+
+
+### Task Difficulty Setting: Varying the Option Count in Multiple-Choice QA Setting
+--- 
+
+
+### Scripts Example
+
+
+
+
+
+```
+TO BE RELEASED SOON
+```
+
+
+
+
+
+
+### Task Difficulty Setting: Varying Context Length for Retrieval-Augmented QA
+--- 
+
+
+
+```
+TO BE RELEASED SOON
+```
+
+
+
+
+### Task Difficulty Setting: Varying Number of K-Shot Examples for In-Context Learning
+
+
+
+```
+TO BE RELEASED SOON
+```
+
+
+
+
+### Task Difficulty Setting: Estimating LLM-Facing Task Difficulty by Normalized Human-LLM Performance Gap
+
+
+
+```
+TO BE RELEASED SOON
+```
+
+
+
+
+
+
+### Task Difficulty Setting: Factoid-Based vs. Multiple-Choice QA
+
+```
+TO BE RELEASED SOON
+```
+
+
+### Scripts example
+
+```
+TO BE RELEASED SOON
+```
 
 
 ## Citation
