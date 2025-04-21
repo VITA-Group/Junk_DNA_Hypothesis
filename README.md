@@ -1,6 +1,6 @@
 #  [Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs [ICML 2024]](https://arxiv.org/pdf/2310.02277.pdf)
 
-**Official PyTorch implementation of Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs**.
+**Official PyTorch implementation of Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs**
 
 [Lu Yin*](https://luuyin.com//), [Ajay Jaiswal*](https://ajay1994.github.io/), [Shiwei Liu](https://shiweiliuiiiiiii.github.io/),[Souvik Kundu](https://ksouvik52.github.io/), [Zhangyang Wang](https://vita-group.github.io/)
 
