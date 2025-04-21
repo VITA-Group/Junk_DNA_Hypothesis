@@ -6,7 +6,7 @@
 
 University of Texas at Austin, University of Surrey, Eindhoven University of Technology, University of Oxford, Intel Labs
 
-The code can be contacted at l.yin@surrey.ac.uk.
+The code can be contacted at ajayjaiswal@utexas.edu and l.yin@surrey.ac.uk.
 
 Table of contents
 * [Installation](#installation)
